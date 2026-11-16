@@ -1,0 +1,58 @@
+name: Compila e pubblica PDF
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Compila i PDF
+    if: github.event_name == 'workflow_dispatch' || contains(github.event.head_commit.message, '[pdf]')
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Scarica i sorgenti
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Installa Typst
+        uses: typst-community/setup-typst@v5
+        with:
+          typst-version: '0.15.1'
+      - name: Compila i PDF e prepara la pagina di download
+        run: bash scripts/build.sh
+      - name: Carica i PDF scaricabili
+        uses: actions/upload-artifact@v7
+        with:
+          name: icdl-pdf
+          path: dist/*.pdf
+          if-no-files-found: error
+          retention-days: 30
+      - name: Prepara i PDF per GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  publish:
+    name: Pubblica su GitHub Pages
+    needs: build
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    concurrency:
+      group: github-pages
+      cancel-in-progress: false
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Pubblica su GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
