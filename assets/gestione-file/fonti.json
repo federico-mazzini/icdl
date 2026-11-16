@@ -1,0 +1,222 @@
+{
+  "schemi": {
+    "repository": "https://github.com/federico-mazzini/intrormatica",
+    "percorso": "assets/svg/",
+    "nota": "Schemi originali copiati senza modifiche; definizioni ed esempi ripresi dalla teoria File e cartelle e Bit, byte e dimensioni."
+  },
+  "screenshot": [
+    {
+      "file": "esplora-file.jpg",
+      "autore": "Windows Central",
+      "pagina": "https://www.windowscentral.com/how-get-most-out-file-explorer-windows-10",
+      "immagine": "https://cdn.mos.cms.futurecdn.net/xBj4V8DetgpU7c95Rx7cnB.jpg"
+    },
+    {
+      "file": "spazio-unita.jpg",
+      "autore": "Hetman Software",
+      "pagina": "https://hetmanrecovery.com/recovery_news/how-to-partition-a-hard-disk-in-windows-10.htm",
+      "immagine": "https://hetmanrecovery.com/pic/blog/a156/local-disk.jpg"
+    },
+    {
+      "file": "proprieta.jpg",
+      "autore": "Laptopnew",
+      "pagina": "https://laptopnew.vn/xem-dung-luong-cua-bat-ky-thu-muc-nao-tren-windows-10",
+      "immagine": "https://bizweb.dktcdn.net/100/372/934/files/3-612a53e6-64f3-45d4-889e-76135dff369a.jpg?v=1599727099287"
+    },
+    {
+      "file": "ordinamento.jpg",
+      "autore": "Idee per computer ed internet",
+      "pagina": "https://www.ideepercomputeredinternet.com/2019/10/esplora-file-windows-10.html",
+      "immagine": "https://1.bp.blogspot.com/-opxqa45m-Ec/XbF4Ajq3uQI/AAAAAAABLxw/HovH4MS53tc4HmQW5PJcThVjF9bigygnQCLcBGAsYHQ/s1600/ordinamento-file.jpg"
+    }
+  ],
+  "slide": [
+    {
+      "slide": 1,
+      "titolo": "Gestione di file",
+      "riferimenti": [],
+      "origine": "copertina"
+    },
+    {
+      "slide": 2,
+      "titolo": "Che cos’è un file? — Un contenitore digitale",
+      "riferimenti": [
+        "4.1.4"
+      ],
+      "origine": "dispensa File e cartelle, definizione e analogia conservate"
+    },
+    {
+      "slide": 3,
+      "titolo": "Nome ed estensione — Come riconosciamo un file",
+      "riferimenti": [
+        "4.1.4"
+      ],
+      "origine": "dispensa File e cartelle, con richiamo a Windows 10"
+    },
+    {
+      "slide": 4,
+      "titolo": "I tipi di file — Le estensioni più comuni",
+      "riferimenti": [
+        "4.1.4"
+      ],
+      "origine": "tabella delle dispense, integrata con gli eseguibili"
+    },
+    {
+      "slide": 5,
+      "titolo": "Cartelle e sottocartelle — Organizzare i materiali",
+      "riferimenti": [
+        "4.1.1",
+        "4.1.6"
+      ],
+      "origine": "dispensa File e cartelle, testi ed esempio ripresi"
+    },
+    {
+      "slide": 6,
+      "titolo": "L’albero delle cartelle — Un esempio con i materiali della classe",
+      "riferimenti": [
+        "4.1.1"
+      ],
+      "origine": "albero-file-cartelle.svg"
+    },
+    {
+      "slide": 7,
+      "titolo": "Il percorso di un file — Un indirizzo per ritrovarlo",
+      "riferimenti": [
+        "4.1.1"
+      ],
+      "origine": "dispensa File e cartelle, percorso ed esempio conservati"
+    },
+    {
+      "slide": 8,
+      "titolo": "Esplora file — Il programma con cui ci muoviamo tra i materiali",
+      "riferimenti": [
+        "4.1.1",
+        "4.1.3"
+      ],
+      "origine": "esplora-file.jpg"
+    },
+    {
+      "slide": 9,
+      "titolo": "Le proprietà — Nome, dimensioni e posizione",
+      "riferimenti": [
+        "4.1.2"
+      ],
+      "origine": "testo riorganizzato con screenshot esterno di Windows 10"
+    },
+    {
+      "slide": 10,
+      "titolo": "Rinominare — Cambiare il nome, non il contenuto",
+      "riferimenti": [
+        "4.1.8"
+      ],
+      "origine": "nuova spiegazione nello stile del docente"
+    },
+    {
+      "slide": 11,
+      "titolo": "Selezionare file e cartelle — Uno, alcuni oppure tutti",
+      "riferimenti": [
+        "4.2.1"
+      ],
+      "origine": "nuova spiegazione nello stile del docente"
+    },
+    {
+      "slide": 12,
+      "titolo": "Ordinare i materiali — Nome, dimensione, tipo e data",
+      "riferimenti": [
+        "4.2.2"
+      ],
+      "origine": "testo riorganizzato con screenshot esterno di Windows 10"
+    },
+    {
+      "slide": 13,
+      "titolo": "Copiare e spostare in Windows — Selezionare, scegliere il comando, indicare dove",
+      "riferimenti": [
+        "4.2.3"
+      ],
+      "origine": "nuova spiegazione nello stile del docente"
+    },
+    {
+      "slide": 14,
+      "titolo": "Il cestino — Eliminare, ripristinare e svuotare",
+      "riferimenti": [
+        "4.2.4",
+        "4.2.5"
+      ],
+      "origine": "accorpamento delle precedenti slide 21 e 22"
+    },
+    {
+      "slide": 15,
+      "titolo": "Dove conserviamo i file? — Supporti e unità di archiviazione",
+      "riferimenti": [
+        "4.3.1"
+      ],
+      "origine": "integrazione dei supporti; chiusura adattata dalla dispensa File e cartelle"
+    },
+    {
+      "slide": 16,
+      "titolo": "Le unità di misura — Byte, KB, MB, GB e TB",
+      "riferimenti": [
+        "4.3.2"
+      ],
+      "origine": "dispensa Bit, byte e dimensioni, definizione e analogia riprese"
+    },
+    {
+      "slide": 17,
+      "titolo": "Lo spazio di archiviazione — Capacità totale, spazio occupato e disponibile",
+      "riferimenti": [
+        "4.3.2",
+        "4.3.3"
+      ],
+      "origine": "archiviazione.svg"
+    },
+    {
+      "slide": 18,
+      "titolo": "Quanto spazio è rimasto? — Questo PC e le proprietà dell’unità",
+      "riferimenti": [
+        "4.3.3"
+      ],
+      "origine": "spazio-unita.jpg"
+    },
+    {
+      "slide": 19,
+      "titolo": "I file ZIP — Più materiali in un unico file",
+      "riferimenti": [
+        "4.3.4"
+      ],
+      "origine": "dispensa File e cartelle, definizione e scopi ripresi"
+    },
+    {
+      "slide": 20,
+      "titolo": "Creare uno ZIP — Dalla cartella a un unico file",
+      "riferimenti": [
+        "4.3.5"
+      ],
+      "origine": "compressione-zip.svg"
+    },
+    {
+      "slide": 21,
+      "titolo": "Comprimere in Windows 10 — Creare una cartella compressa",
+      "riferimenti": [
+        "4.3.5"
+      ],
+      "origine": "nuova spiegazione nello stile del docente"
+    },
+    {
+      "slide": 22,
+      "titolo": "Estrarre uno ZIP — Ritrovare i file e le cartelle",
+      "riferimenti": [
+        "4.3.6"
+      ],
+      "origine": "estrazione-zip.svg"
+    },
+    {
+      "slide": 23,
+      "titolo": "Estrarre in Windows 10 — Scegliere la cartella di destinazione",
+      "riferimenti": [
+        "4.3.6"
+      ],
+      "origine": "procedura nuova; spiegazioni dalla dispensa File e cartelle"
+    }
+  ],
+  "nota_editoriale": "Selezione ridotta dal docente: eliminate le precedenti slide 9, 11, 12, 14, 15, 16 e 19; accorpate 21 e 22; screenshot aggiunti a 10 e 18; rimosso Blu-ray dalla 23. Il PDF non copre più integralmente tutti i punti del syllabus."
+}

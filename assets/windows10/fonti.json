@@ -1,0 +1,44 @@
+[
+  {
+    "file": "barra-applicazioni.png",
+    "autore": "Microsoft",
+    "pagina": "https://support.microsoft.com/it-it/windows/experience/personalization/customize-the-taskbar-in-windows",
+    "immagine": "https://support.microsoft.com/it-it/windows/media/windows-10-taskbar.png",
+    "uso": "Slide 2: ritaglio della sola barra, frecce e testi aggiunti come elementi Typst."
+  },
+  {
+    "file": "gestione-attivita.png",
+    "autore": "MiniTool",
+    "pagina": "https://www.minitool.com/news/new-chrome-bug-freeze-windows-10.html",
+    "immagine": "https://images.minitool.com/minitool.com/images/uploads/news/2018/12/new-chrome-bug-freeze-windows-10/new-chrome-bug-freeze-windows-10-3.png",
+    "uso": "Slide 5: screenshot Windows 10 con pulsante End task."
+  },
+  {
+    "file": "espelli-usb.jpg",
+    "autore": "PCRisk",
+    "pagina": "https://www.pcrisk.com/blog/windows/13336-cant-safely-eject-external-hard-drive-on-windows-10-4-ways-you-can-fix-it",
+    "immagine": "https://www.pcrisk.com/blog/images/stories/blog/2020/cant-safely-eject-external-hard-drive-on-windows-10-4-ways-you-can-fix-it/in-the-taskbar-eject-the-external-storage-device.jpg",
+    "uso": "Slide 7: screenshot Windows 10, annotazioni originali conservate."
+  },
+  {
+    "file": "cattura-annota.jpg",
+    "autore": "Windows Central",
+    "pagina": "https://www.windowscentral.com/how-take-windows-10-screenshot-7-best-techniques",
+    "immagine": "https://cdn.mos.cms.futurecdn.net/ZH3rEWmNg7bpzH5q5daogQ.jpg",
+    "uso": "Slide 8: ritaglio nativo della finestra Snip & Sketch / Cattura e annota."
+  },
+  {
+    "file": "finestre-affiancate.jpg",
+    "autore": "Hongkiat",
+    "pagina": "https://www.hongkiat.com/blog/windows-productivity-tips-tricks/",
+    "immagine": "https://assets.hongkiat.com/uploads/windows-productivity-tips-tricks/resize-snapped-windows-mouse.jpg",
+    "uso": "Slide 3: Esplora file e Impostazioni affiancati in Windows 10."
+  },
+  {
+    "file": "informazioni-sistema.jpg",
+    "autore": "Salvatore Aranzulla",
+    "pagina": "https://www.aranzulla.it/come-vedere-le-caratteristiche-del-pc-windows-10-1099667.html",
+    "immagine": "https://www.aranzulla.it/wp-content/contenuti/2018/08/Schermata-2018-08-16-alle-19.01.18.jpg",
+    "uso": "Slide 4: Informazioni su di Windows 10, con RAM, edizione e versione; oscuramenti presenti nella fonte conservati."
+  }
+]

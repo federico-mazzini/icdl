@@ -10,6 +10,8 @@ def main():
     directory = Path(sys.argv[1])
     titles = {
         "1_computer_dispositivi.pdf": "1. Computer e dispositivi",
+        "2_desktop_icone_impostazioni.pdf": "2. Desktop, icone e impostazioni",
+        "4_gestione_file.pdf": "4. Gestione di file",
         "originali mie.pdf": "Originali mie",
     }
     pdfs = sorted(directory.glob("*.pdf"))

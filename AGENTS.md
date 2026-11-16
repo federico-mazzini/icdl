@@ -17,12 +17,14 @@
 
 ## Presentazioni Typst
 
-Sono disponibili due versioni, ciascuna con un unico sorgente Typst:
+Sono disponibili quattro presentazioni, ciascuna con un unico sorgente Typst:
 
 | Versione | Sorgente | PDF | Contenuto |
 | --- | --- | --- | --- |
 | Originali mie | `originali mie.typ` | `dist/originali mie.pdf` | Tutte le 49 slide della prima conversione |
 | 1. Computer e dispositivi | `1_computer_dispositivi.typ` | `dist/1_computer_dispositivi.pdf` | 47 slide: 26 riprese dalle originali e 21 nuove |
+| 2. Desktop, icone e impostazioni | `2_desktop_icone_impostazioni.typ` | `dist/2_desktop_icone_impostazioni.pdf` | 8 slide, selezione concordata dei punti della sezione 2 |
+| 4. Gestione di file | `4_gestione_file.typ` | `dist/4_gestione_file.pdf` | 23 slide, selezione ridotta concordata della sezione 4 |
 
 La presentazione iniziale, prima chiamata `presentazione`, è stata rinominata **originali mie**. Il PDF è stato rinominato senza modificarne il contenuto. Raccoglie i tre materiali originali in questo ordine:
 
@@ -106,6 +108,61 @@ Per le nuove spiegazioni su licenze e procedure di Windows sono state consultate
 - [Microsoft: condizioni di licenza software](https://learn.microsoft.com/en-us/legal/information-protection/software-license-terms), come esempio di contratto con l’utente finale.
 - [Microsoft: accesso agli account in Windows](https://support.microsoft.com/en-gb/accounts-billing/security/user-account-access-in-windows), per accesso, blocco e disconnessione.
 - [Microsoft: spegnimento del computer](https://support.microsoft.com/en-gb/windows/experience/power-battery/shut-down-sleep-or-hibernate-your-pc), per la procedura dal menu Start.
+
+### 2. Desktop, icone e impostazioni
+
+Segui la selezione del docente, senza aggiungere automaticamente gli argomenti esclusi. La presentazione non intende coprire integralmente la sezione 2.
+
+| Slide | Riferimento | Trattamento |
+| --- | --- | --- |
+| 1 | — | Copertina nello stile della prima presentazione |
+| 2 | 2.1.1, 2.1.2 | Barra di Windows 10 con frecce; identificare solo le icone presenti nello screenshot |
+| 3 | 2.2.2 | Breve spiegazione di multitasking e finestre con screenshot, dimostrazione dal vivo |
+| 4 | 2.3.2 | Breve spiegazione delle informazioni del computer con screenshot, dimostrazione dal vivo |
+| 5 | 2.3.5 | Applicazione bloccata e Gestione attività, con screenshot |
+| 6 | 2.3.6 | Installare e disinstallare: accenno per dimostrazione dal vivo |
+| 7 | 2.3.7 | Screenshot di Espelli dispositivo e due righe di spiegazione |
+| 8 | 2.3.8 | Screenshot di Cattura e annota e scorciatoia Windows + Shift + S |
+
+Saltare 2.1.3, 2.1.4, 2.2.1, 2.2.3, 2.3.1, 2.3.3 e 2.3.4. Tutti gli screenshot devono essere di Windows 10, senza acquisizioni dal Mac del docente. Sono ammesse immagini da tutorial esterni, anche Aranzulla, verificando che non siano state sostituite con schermate di Windows 11. Le immagini usate, i rispettivi autori e i ritagli sono documentati in `assets/windows10/fonti.json`; i ritagli SVG mantengono intatti i file bitmap originali. Non generare schermate simulate.
+
+Riferimenti per le procedure: [Microsoft, barra delle applicazioni](https://support.microsoft.com/it-it/windows/experience/personalization/customize-the-taskbar-in-windows), [Microsoft, Cattura e annota in Windows 10](https://blogs.windows.com/windowsexperience/2019/04/08/windows-10-tip-snip-sketch/), [Microsoft, rimozione sicura](https://support.microsoft.com/en-us/windows/hardware/safely-remove-hardware-in-windows), [Microsoft, strumenti di supporto e Gestione attività](https://support.microsoft.com/en-us/accessibility/windows/use-a-screen-reader-to-navigate-windows-support-tools).
+
+### 4. Gestione di file
+
+Riprendi il testo e lo stile delle dispense del docente in [intrormatica](https://github.com/federico-mazzini/intrormatica). Usa come fonti principali `src/1-file-cartelle/1-1-file-cartelle.typ`, `1-2-esercizi.typ`, `src/3-bit-byte-dimensioni/3-1-bit-byte-dimensioni.typ` e le parti pertinenti di Hardware e Software. Conserva definizioni, analogie ed esempi scolastici: file come contenitore digitale, struttura ad albero, percorso come indirizzo, cartella Classe 1A, ZIP come copia dei materiali. Adatta il nuovo allo stesso italiano, senza riscrivere inutilmente i testi già pronti.
+
+Gli schemi originali e gli screenshot esterni di Windows 10 sono in `assets/gestione-file/`. La provenienza di ogni slide e la mappatura puntuale al syllabus sono in `assets/gestione-file/fonti.json`. I PDF delle sezioni 1 e 2 restano separati. Mantieni copertina, stile Typst comune, paragrafi brevi e tabelle modificabili. Su richiesta del docente, non includere i laboratori finali né gli approfondimenti su conversione dei formati, indicizzazione, conflitti tra file omonimi, eliminazione fuori dal cestino, limiti degli allegati email o aggiornamento degli ZIP. Conserva le basi su file, nomi ed estensioni necessarie al syllabus.
+
+Selezione aggiornata su indicazione del docente: eliminate le precedenti slide 9, 11, 12, 14, 15, 16 e 19; unite 21–22; screenshot aggiunti alle precedenti 10 e 18; rimosso Blu-ray. La copertura del syllabus è ora parziale. Non reinserire i contenuti esclusi senza richiesta. Numerazione corrente:
+
+| Slide | Argomento | Riferimenti |
+| --- | --- | --- |
+| 1 | Gestione di file | — |
+| 2 | Che cos’è un file? — Un contenitore digitale | 4.1.4 |
+| 3 | Nome ed estensione — Come riconosciamo un file | 4.1.4 |
+| 4 | I tipi di file — Le estensioni più comuni | 4.1.4 |
+| 5 | Cartelle e sottocartelle — Organizzare i materiali | 4.1.1, 4.1.6 |
+| 6 | L’albero delle cartelle — Un esempio con i materiali della classe | 4.1.1 |
+| 7 | Il percorso di un file — Un indirizzo per ritrovarlo | 4.1.1 |
+| 8 | Esplora file — Il programma con cui ci muoviamo tra i materiali | 4.1.1, 4.1.3 |
+| 9 | Le proprietà — Nome, dimensioni e posizione | 4.1.2 |
+| 10 | Rinominare — Cambiare il nome, non il contenuto | 4.1.8 |
+| 11 | Selezionare file e cartelle — Uno, alcuni oppure tutti | 4.2.1 |
+| 12 | Ordinare i materiali — Nome, dimensione, tipo e data | 4.2.2 |
+| 13 | Copiare e spostare in Windows — Selezionare, scegliere il comando, indicare dove | 4.2.3 |
+| 14 | Il cestino — Eliminare, ripristinare e svuotare | 4.2.4, 4.2.5 |
+| 15 | Dove conserviamo i file? — Supporti e unità di archiviazione | 4.3.1 |
+| 16 | Le unità di misura — Byte, KB, MB, GB e TB | 4.3.2 |
+| 17 | Lo spazio di archiviazione — Capacità totale, spazio occupato e disponibile | 4.3.2, 4.3.3 |
+| 18 | Quanto spazio è rimasto? — Questo PC e le proprietà dell’unità | 4.3.3 |
+| 19 | I file ZIP — Più materiali in un unico file | 4.3.4 |
+| 20 | Creare uno ZIP — Dalla cartella a un unico file | 4.3.5 |
+| 21 | Comprimere in Windows 10 — Creare una cartella compressa | 4.3.5 |
+| 22 | Estrarre uno ZIP — Ritrovare i file e le cartelle | 4.3.6 |
+| 23 | Estrarre in Windows 10 — Scegliere la cartella di destinazione | 4.3.6 |
+
+Per le procedure sono stati consultati i riferimenti Microsoft su [Esplora file](https://support.microsoft.com/en-us/windows/experience/fileexplorer/file-explorer-in-windows), [ZIP](https://support.microsoft.com/en-us/windows/experience/storage-filemanagement/zip-and-unzip-files), [estensioni](https://support.microsoft.com/it-it/windows/experience/storage-filemanagement/common-file-name-extensions-in-windows) e [ricerca e indicizzazione](https://support.microsoft.com/en-us/windows/experience/performance-optimization/search-indexing-in-windows). Non confondere le procedure di Windows 10 con quelle di Windows 11. La ricerca nel contenuto dipende dalle impostazioni e dal tipo di file; il cestino non raccoglie necessariamente le eliminazioni da unità rimovibili o di rete.
 
 ## Modulo 1: revisione grafica PowerPoint
 

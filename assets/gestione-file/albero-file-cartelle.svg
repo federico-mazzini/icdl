@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430" viewBox="0 0 1000 430" role="img" aria-label="Albero verticale: Documenti contiene Classe 1A, con le sottocartelle Informatica, Italiano e Matematica e i rispettivi file. Il percorso fino ad Appunti.txt è evidenziato in verde.">
+  <style>
+    text { font-family: Arial, Liberation Sans, sans-serif; fill: #292a2a; }
+    .folder { font-size: 25px; font-weight: 700; }
+    .file { font-size: 22px; }
+    .branch { fill: none; stroke: #8995a3; stroke-width: 2; stroke-linejoin: round; }
+    .selected { fill: none; stroke: #167044; stroke-width: 3; stroke-linejoin: round; }
+    .node { fill: white; stroke: #bac3cd; stroke-width: 1.5; }
+    .highlight { fill: #eaf4ed; stroke: #167044; stroke-width: 2; }
+    .green { fill: #167044; }
+  </style>
+  <defs>
+    <path id="folder-icon" d="M0 7 V0 H11 L17 7 H30 V27 H0 Z"/>
+    <path id="file-icon" d="M0 0 H14 L22 8 V28 H0 Z M14 0 V8 H22" fill="none" stroke-width="1.8"/>
+  </defs>
+
+  <!-- I collegamenti scendono dal genitore ai figli. -->
+  <path class="selected" d="M500 62 V108"/>
+  <path class="branch" d="M500 160 V196 H892 V234 M598 196 V234"/>
+  <path class="selected" d="M500 160 V196 H206 V234"/>
+  <path class="branch" d="M206 286 V326 H304 V372"/>
+  <path class="selected" d="M206 286 V326 H108 V372"/>
+  <path class="branch" d="M598 286 V326 M500 372 V326 H696 V372 M892 286 V372"/>
+
+  <!-- Primo e secondo livello. -->
+  <rect class="highlight" x="382" y="10" width="236" height="52" rx="5"/>
+  <use href="#folder-icon" x="397" y="22" class="green"/>
+  <text class="folder green" x="439" y="44">Documenti</text>
+  <rect class="highlight" x="382" y="108" width="236" height="52" rx="5"/>
+  <use href="#folder-icon" x="397" y="120" class="green"/>
+  <text class="folder green" x="439" y="142">Classe 1A</text>
+
+  <!-- Le tre materie sono sorelle, sullo stesso livello. -->
+  <rect class="highlight" x="92" y="234" width="228" height="52" rx="5"/>
+  <use href="#folder-icon" x="104" y="246" class="green"/>
+  <text class="folder green" x="143" y="268">Informatica</text>
+  <rect class="node" x="484" y="234" width="228" height="52" rx="5"/>
+  <use href="#folder-icon" x="496" y="246" fill="#74869b"/>
+  <text class="folder" x="535" y="268">Italiano</text>
+  <rect class="node" x="778" y="234" width="214" height="52" rx="5"/>
+  <use href="#folder-icon" x="790" y="246" fill="#74869b"/>
+  <text class="folder" x="829" y="268">Matematica</text>
+
+  <!-- Ogni file è una foglia sotto la cartella che lo contiene. -->
+  <rect class="highlight" x="16" y="372" width="184" height="46" rx="5"/>
+  <use href="#file-icon" x="26" y="381" stroke="#167044"/>
+  <text class="file green" x="56" y="402">Appunti.txt</text>
+  <rect class="node" x="212" y="372" width="184" height="46" rx="5"/>
+  <use href="#file-icon" x="222" y="381" stroke="#74869b"/>
+  <text class="file" x="252" y="402">Dispensa.pdf</text>
+  <rect class="node" x="408" y="372" width="184" height="46" rx="5"/>
+  <use href="#file-icon" x="418" y="381" stroke="#74869b"/>
+  <text class="file" x="448" y="402">Tema.docx</text>
+  <rect class="node" x="604" y="372" width="184" height="46" rx="5"/>
+  <use href="#file-icon" x="614" y="381" stroke="#74869b"/>
+  <text class="file" x="644" y="402">Lettura.pdf</text>
+  <rect class="node" x="800" y="372" width="184" height="46" rx="5"/>
+  <use href="#file-icon" x="810" y="381" stroke="#74869b"/>
+  <text class="file" x="840" y="402">Esercizi.xlsx</text>
+</svg>
