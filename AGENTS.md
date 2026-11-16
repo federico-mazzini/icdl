@@ -2,13 +2,13 @@
 
 ## Lavoro nel repository
 
-- Mantieni `README.md` con i soli link alle presentazioni pubblicate e all’indice dei PDF. Inserisci qui le istruzioni operative e le note tecniche.
-- Ogni presentazione ha un unico sorgente `.typ` nella cartella principale. Le risorse grafiche sono in `assets/slide/`.
-- Conserva `originali mie.typ` come versione integrale delle slide del docente; modificala solo su richiesta esplicita. Non alterare i PDF di origine in `mie_slide/`.
-- Per `1_computer_dispositivi.typ`, segui soltanto la sezione 1 del file locale `syllabus.pdf`, mantenendo la copertura dei 13 riferimenti riportati sotto.
+- Mantieni `README.md` con i soli link alle presentazioni pubblicate, ai relativi sorgenti in `src/` e all’indice dei PDF. Inserisci qui le istruzioni operative e le note tecniche.
+- Ogni presentazione ha un unico sorgente `.typ` in `src/`. Le risorse grafiche sono in `assets/` e i percorsi nei sorgenti partono da `../assets/`. Compila con `--root .` dalla radice del repository.
+- Conserva `src/originali mie.typ` come versione integrale delle slide del docente; modificala solo su richiesta esplicita. Non alterare i PDF di origine in `mie_slide/`.
+- Per `src/1_computer_dispositivi.typ`, segui soltanto la sezione 1 del file locale `syllabus.pdf`, mantenendo la copertura dei 13 riferimenti riportati sotto.
 - Mantieni formato 960 × 540 punti, Libertinus Serif, titoli rossi `#c00000`, impaginazione, immagini e stile narrativo del docente. I testi devono restare modificabili in Typst.
 - Quando modifichi le slide, compila con Typst 0.15.1 tramite `bash scripts/build.sh`, controlla visivamente le pagine modificate e verifica conteggio, numerazione, testi e assenza di sovrapposizioni o contenuti fuori pagina.
-- Non versionare `dist/`: contiene PDF e indice generati. La build compila tutti i sorgenti `.typ` della cartella principale.
+- Non versionare `dist/`: contiene PDF e indice generati. La build compila tutti i sorgenti `.typ` di `src/`.
 - Mantieni stabili i nomi dei PDF e i link pubblici. Se aggiungi una presentazione, aggiorna i link nel README e, se serve, il titolo in `scripts/build_index.py`.
 - Per pubblicare i PDF, usa `[pdf]` nel messaggio dell’ultimo commit del push su `main`. Per modifiche alle sole istruzioni o alla documentazione non è necessaria una nuova pubblicazione dei PDF.
 - Dopo un push che pubblica PDF, verifica l’esito dell’Action e l’accessibilità dei file su GitHub Pages.
@@ -21,10 +21,10 @@ Sono disponibili quattro presentazioni, ciascuna con un unico sorgente Typst:
 
 | Versione | Sorgente | PDF | Contenuto |
 | --- | --- | --- | --- |
-| Originali mie | `originali mie.typ` | `dist/originali mie.pdf` | Tutte le 49 slide della prima conversione |
-| 1. Computer e dispositivi | `1_computer_dispositivi.typ` | `dist/1_computer_dispositivi.pdf` | 47 slide: 26 riprese dalle originali e 21 nuove |
-| 2. Desktop, icone e impostazioni | `2_desktop_icone_impostazioni.typ` | `dist/2_desktop_icone_impostazioni.pdf` | 8 slide, selezione concordata dei punti della sezione 2 |
-| 4. Gestione di file | `4_gestione_file.typ` | `dist/4_gestione_file.pdf` | 23 slide, selezione ridotta concordata della sezione 4 |
+| Originali mie | `src/originali mie.typ` | `dist/originali mie.pdf` | Tutte le 49 slide della prima conversione |
+| 1. Computer e dispositivi | `src/1_computer_dispositivi.typ` | `dist/1_computer_dispositivi.pdf` | 47 slide: 26 riprese dalle originali e 21 nuove |
+| 2. Desktop, icone e impostazioni | `src/2_desktop_icone_impostazioni.typ` | `dist/2_desktop_icone_impostazioni.pdf` | 8 slide, selezione concordata dei punti della sezione 2 |
+| 4. Gestione di file | `src/4_gestione_file.typ` | `dist/4_gestione_file.pdf` | 23 slide, selezione ridotta concordata della sezione 4 |
 
 La presentazione iniziale, prima chiamata `presentazione`, è stata rinominata **originali mie**. Il PDF è stato rinominato senza modificarne il contenuto. Raccoglie i tre materiali originali in questo ordine:
 
@@ -50,14 +50,14 @@ bash scripts/build.sh
 Per ricompilare automaticamente durante le modifiche:
 
 ```sh
-typst watch 1_computer_dispositivi.typ dist/1_computer_dispositivi.pdf
+typst watch --root . src/1_computer_dispositivi.typ dist/1_computer_dispositivi.pdf
 ```
 
 Compilato con Typst 0.15.1. Verificate tutte le 49 pagine, la presenza integrale delle 582 righe di testo estratte dagli originali, l'assenza di testo fuori pagina e il collegamento al video nella slide sulla composizione della CPU. Il carattere Libertinus Serif è incorporato nel PDF.
 
 ### Pubblicazione con GitHub Actions
 
-Per ricompilare tutti i sorgenti `.typ` nella cartella principale e aggiornare i PDF su GitHub Pages, inserire `[pdf]` nel messaggio dell’ultimo commit del push su `main`:
+Per ricompilare tutti i sorgenti `.typ` in `src/` e aggiornare i PDF su GitHub Pages, inserire `[pdf]` nel messaggio dell’ultimo commit del push su `main`:
 
 ```sh
 git add .
@@ -67,7 +67,7 @@ git push origin main
 
 I push senza `[pdf]` nell’ultimo commit saltano compilazione e pubblicazione. È possibile avviare la procedura anche da **Actions → Compila e pubblica PDF → Run workflow**.
 
-La build usa Typst 0.15.1 e pubblica i PDF con nomi stabili, senza cambiare i link a ogni aggiornamento. Compila automaticamente anche eventuali nuovi sorgenti `.typ` aggiunti nella cartella principale. La pagina iniziale elenca tutti i PDF generati. Se una compilazione fallisce, la versione già online rimane disponibile. I PDF sono scaricabili anche dall’artifact `icdl-pdf`, conservato per 30 giorni.
+La build usa Typst 0.15.1 e pubblica i PDF con nomi stabili, senza cambiare i link a ogni aggiornamento. Compila automaticamente anche eventuali nuovi sorgenti `.typ` aggiunti in `src/`. La pagina iniziale elenca tutti i PDF generati. Se una compilazione fallisce, la versione già online rimane disponibile. I PDF sono scaricabili anche dall’artifact `icdl-pdf`, conservato per 30 giorni.
 
 `dist/` contiene gli output locali ed è esclusa da Git: la pubblicazione viene generata dai sorgenti. Il sito è configurato con **Settings → Pages → Source: GitHub Actions**.
 

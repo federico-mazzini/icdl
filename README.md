@@ -1,9 +1,9 @@
-[**Apri le slide: 1. Computer e dispositivi**](https://federico-mazzini.github.io/icdl/1_computer_dispositivi.pdf)
+[**1. Computer e dispositivi — PDF**](https://federico-mazzini.github.io/icdl/1_computer_dispositivi.pdf) · [Sorgente Typst](src/1_computer_dispositivi.typ)
 
-[**Apri le slide: 2. Desktop, icone e impostazioni**](https://federico-mazzini.github.io/icdl/2_desktop_icone_impostazioni.pdf)
+[**2. Desktop, icone e impostazioni — PDF**](https://federico-mazzini.github.io/icdl/2_desktop_icone_impostazioni.pdf) · [Sorgente Typst](src/2_desktop_icone_impostazioni.typ)
 
-[**Apri le slide: 4. Gestione di file**](https://federico-mazzini.github.io/icdl/4_gestione_file.pdf)
+[**4. Gestione di file — PDF**](https://federico-mazzini.github.io/icdl/4_gestione_file.pdf) · [Sorgente Typst](src/4_gestione_file.typ)
 
-[**Apri le originali mie**](https://federico-mazzini.github.io/icdl/originali%20mie.pdf)
+[**Originali mie — PDF**](https://federico-mazzini.github.io/icdl/originali%20mie.pdf) · [Sorgente Typst](src/originali%20mie.typ)
 
 [**Tutti i PDF**](https://federico-mazzini.github.io/icdl/)

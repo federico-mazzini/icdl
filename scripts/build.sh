@@ -6,9 +6,9 @@ build_dir=$(mktemp -d)
 trap 'rm -rf "$build_dir"' EXIT
 
 count=0
-for source in ./*.typ; do
+for source in src/*.typ; do
   [[ -f "$source" ]] || continue
-  name=${source#./}
+  name=${source##*/}
   output=${name%.typ}.pdf
   printf 'Compilo %s\n' "$name"
   typst compile --root . "$source" "$build_dir/$output"
@@ -17,7 +17,7 @@ for source in ./*.typ; do
 done
 
 if [[ "$count" -eq 0 ]]; then
-  printf 'Nessun sorgente Typst trovato nella cartella principale.\n' >&2
+  printf 'Nessun sorgente Typst trovato in src/.\n' >&2
   exit 1
 fi
 

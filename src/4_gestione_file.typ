@@ -1,7 +1,7 @@
 // Sezione 4 del syllabus Computer Essentials.
 // Testi e schemi ripresi dalle dispense del docente in intrormatica.
 // Provenienza e copertura: assets/gestione-file/fonti.json e AGENTS.md.
-// Compilazione: typst compile 4_gestione_file.typ dist/4_gestione_file.pdf
+// Compilazione: typst compile --root . src/4_gestione_file.typ dist/4_gestione_file.pdf
 
 #let rosso = rgb("#c00000")
 #let grigio = rgb("#555555")
@@ -158,7 +158,7 @@ Si può creare una cartella per l’anno scolastico e, al suo interno, una carte
 ]
 
 // Syllabus: 4.1.1
-#schema("L’albero delle cartelle", "Un esempio con i materiali della classe", "assets/gestione-file/albero-file-cartelle.svg")
+#schema("L’albero delle cartelle", "Un esempio con i materiali della classe", "../assets/gestione-file/albero-file-cartelle.svg")
 
 // Syllabus: 4.1.1; dispensa File e cartelle, percorso ed esempio conservati
 #lezione("Il percorso di un file", "Un indirizzo per ritrovarlo")[
@@ -174,7 +174,7 @@ Il simbolo `\` separa i diversi elementi del percorso.
 ]
 
 // Syllabus: 4.1.1, 4.1.3
-#schema("Esplora file", "Il programma con cui ci muoviamo tra i materiali", "assets/gestione-file/esplora-file.jpg", nota: [Aprire *Esplora file* con *Windows + E*. A sinistra troviamo le posizioni; in alto il percorso e la ricerca; al centro i file della cartella.])
+#schema("Esplora file", "Il programma con cui ci muoviamo tra i materiali", "../assets/gestione-file/esplora-file.jpg", nota: [Aprire *Esplora file* con *Windows + E*. A sinistra troviamo le posizioni; in alto il percorso e la ricerca; al centro i file della cartella.])
 
 // Syllabus: 4.1.2; spiegazione con screenshot di Windows 10
 #slide(titolo: "Le proprietà")[
@@ -188,7 +188,7 @@ Il simbolo `\` separa i diversi elementi del percorso.
 
     Nello screenshot, *Size* indica la dimensione complessiva della cartella; *Location* è la posizione.
   ]
-  #place(top + left, dx: 600pt, dy: 145pt, image("assets/gestione-file/proprieta.jpg", width: 290pt))
+  #place(top + left, dx: 600pt, dy: 145pt, image("../assets/gestione-file/proprieta.jpg", width: 290pt))
 ]
 
 // Syllabus: 4.1.8; nuova spiegazione nello stile del docente
@@ -226,7 +226,7 @@ Prima di dare il comando, controllare quali file risultano selezionati.
 
     Per dimensione: *crescente* dal più piccolo al più grande; *decrescente* dal più grande al più piccolo.
   ]
-  #place(top + left, dx: 450pt, dy: 155pt, image("assets/gestione-file/ordinamento.jpg", width: 450pt))
+  #place(top + left, dx: 450pt, dy: 155pt, image("../assets/gestione-file/ordinamento.jpg", width: 450pt))
 ]
 
 // Syllabus: 4.2.3; nuova spiegazione nello stile del docente
@@ -277,10 +277,10 @@ Sono unità via via più grandi. La capacità di un supporto e la dimensione dei
 ]
 
 // Syllabus: 4.3.2, 4.3.3
-#schema("Lo spazio di archiviazione", "Capacità totale, spazio occupato e disponibile", "assets/gestione-file/archiviazione.svg", nota: [Ogni dispositivo ha una capacità di archiviazione. Una parte è già occupata; quella che rimane è lo *spazio disponibile* per nuovi dati.])
+#schema("Lo spazio di archiviazione", "Capacità totale, spazio occupato e disponibile", "../assets/gestione-file/archiviazione.svg", nota: [Ogni dispositivo ha una capacità di archiviazione. Una parte è già occupata; quella che rimane è lo *spazio disponibile* per nuovi dati.])
 
 // Syllabus: 4.3.3
-#schema("Quanto spazio è rimasto?", "Questo PC e le proprietà dell’unità", "assets/gestione-file/spazio-unita.jpg", nota: [Aprire *Esplora file → Questo PC*: sotto le unità troviamo lo spazio libero. Per altre informazioni, scegliere *clic destro sull’unità → Proprietà*.])
+#schema("Quanto spazio è rimasto?", "Questo PC e le proprietà dell’unità", "../assets/gestione-file/spazio-unita.jpg", nota: [Aprire *Esplora file → Questo PC*: sotto le unità troviamo lo spazio libero. Per altre informazioni, scegliere *clic destro sull’unità → Proprietà*.])
 
 // Syllabus: 4.3.4; dispensa File e cartelle, definizione e scopi ripresi
 #lezione("I file ZIP", "Più materiali in un unico file")[
@@ -292,7 +292,7 @@ La compressione può ridurre la dimensione dei file, ma il risultato dipende dal
 ]
 
 // Syllabus: 4.3.5
-#schema("Creare uno ZIP", "Dalla cartella a un unico file", "assets/gestione-file/compressione-zip.svg", nota: [Lo ZIP contiene una *copia dei file e delle sottocartelle*. La cartella originale rimane al suo posto e puoi continuare a usarla.])
+#schema("Creare uno ZIP", "Dalla cartella a un unico file", "../assets/gestione-file/compressione-zip.svg", nota: [Lo ZIP contiene una *copia dei file e delle sottocartelle*. La cartella originale rimane al suo posto e puoi continuare a usarla.])
 
 // Syllabus: 4.3.5; nuova spiegazione nello stile del docente
 #lezione("Comprimere in Windows 10", "Creare una cartella compressa")[
@@ -306,7 +306,7 @@ Non serve eliminare la cartella originale: creare lo ZIP non la sposta e non la 
 ]
 
 // Syllabus: 4.3.6
-#schema("Estrarre uno ZIP", "Ritrovare i file e le cartelle", "assets/gestione-file/estrazione-zip.svg", nota: [*Estrarre uno ZIP* significa copiare i file e le cartelle che contiene in una cartella del computer. Anche lo ZIP originale rimane disponibile.])
+#schema("Estrarre uno ZIP", "Ritrovare i file e le cartelle", "../assets/gestione-file/estrazione-zip.svg", nota: [*Estrarre uno ZIP* significa copiare i file e le cartelle che contiene in una cartella del computer. Anche lo ZIP originale rimane disponibile.])
 
 // Syllabus: 4.3.6; procedura nuova; spiegazioni dalla dispensa File e cartelle
 #lezione("Estrarre in Windows 10", "Scegliere la cartella di destinazione")[

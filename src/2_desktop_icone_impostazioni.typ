@@ -1,6 +1,6 @@
 // Sezione 2: selezione concordata con il docente; non copre i punti esclusi.
 // Screenshot esterni di Windows 10: provenienza in assets/windows10/fonti.json.
-// Compilazione: typst compile 2_desktop_icone_impostazioni.typ dist/2_desktop_icone_impostazioni.pdf
+// Compilazione: typst compile --root . src/2_desktop_icone_impostazioni.typ dist/2_desktop_icone_impostazioni.pdf
 
 #let rosso = rgb("#c00000")
 #let grigio = rgb("#555555")
@@ -111,7 +111,7 @@
   #titolo("Desktop e barra delle applicazioni", "Windows 10")
   #blocco(64, 142, 832)[Il *desktop* è lo spazio di lavoro del sistema operativo. La *barra delle applicazioni* permette di avviare programmi, ritrovare quelli aperti e leggere informazioni sul sistema.]
   // Ritaglio nativo della sola barra: il file originale Microsoft rimane intatto.
-  #place(top + left, dx: 48pt, dy: 258pt, image("assets/windows10/barra-ritaglio.svg", width: 864pt))
+  #place(top + left, dx: 48pt, dy: 258pt, image("../assets/windows10/barra-ritaglio.svg", width: 864pt))
   #freccia(90, 345, 64, 279)
   #blocco(48, 355, 120, corpo: 20)[*Start*\ Applicazioni e comandi del sistema.]
   #freccia(215, 345, 210, 279)
@@ -138,7 +138,7 @@
 
     Ridurre a icona lascia l’applicazione aperta. Chiudere una finestra può richiedere di *salvare il lavoro*.
   ]
-  #place(top + left, dx: 425pt, dy: 180pt, image("assets/windows10/finestre-affiancate.jpg", width: 485pt))
+  #place(top + left, dx: 425pt, dy: 180pt, image("../assets/windows10/finestre-affiancate.jpg", width: 485pt))
 ]
 
 // 3 — 2.3.2. Accenno con screenshot; consultazione mostrata dal vivo.
@@ -151,7 +151,7 @@
 
     In Windows 10: *Impostazioni → Sistema → Informazioni su* (o *Informazioni sul sistema*).
   ]
-  #place(top + left, dx: 395pt, dy: 170pt, image("assets/windows10/informazioni-sistema.jpg", width: 515pt))
+  #place(top + left, dx: 395pt, dy: 170pt, image("../assets/windows10/informazioni-sistema.jpg", width: 515pt))
 ]
 
 // 4 — 2.3.5. Screenshot reale di Gestione attività di Windows 10.
@@ -166,7 +166,7 @@
 
     Il lavoro non salvato nell’applicazione può andare perso.
   ]
-  #place(top + left, dx: 515pt, dy: 151pt, image("assets/windows10/gestione-attivita.png", width: 375pt))
+  #place(top + left, dx: 515pt, dy: 151pt, image("../assets/windows10/gestione-attivita.png", width: 375pt))
 ]
 
 // 5 — 2.3.6. Scelta del docente: breve accenno per dimostrazione dal vivo.
@@ -181,7 +181,7 @@ Cancellare il collegamento dal desktop *non disinstalla* il programma.
 // 6 — 2.3.7. Screenshot di espulsione; spiegazione limitata a due righe.
 #slide(titolo: "Scollegare una chiavetta USB")[
   #titolo("Scollegare una chiavetta USB", "Espelli dispositivo")
-  #place(top + left, dx: 225pt, dy: 145pt, image("assets/windows10/espelli-usb.jpg", width: 510pt))
+  #place(top + left, dx: 225pt, dy: 145pt, image("../assets/windows10/espelli-usb.jpg", width: 510pt))
   #blocco(64, 458, 832, corpo: 23)[Terminati i trasferimenti, aprire l’icona USB e scegliere *Espelli* (*Eject*).\ Attendere la conferma di Windows prima di scollegare il dispositivo.]
 ]
 
@@ -198,5 +198,5 @@ Cancellare il collegamento dal desktop *non disinstalla* il programma.
     Aprire la notifica per vedere la cattura nell’app, annotarla e salvarla.
   ]
   // Ritaglio nativo della finestra dell’app, conservando lo screenshot originale.
-  #place(top + left, dx: 465pt, dy: 153pt, image("assets/windows10/cattura-ritaglio.svg", width: 430pt))
+  #place(top + left, dx: 465pt, dy: 153pt, image("../assets/windows10/cattura-ritaglio.svg", width: 430pt))
 ]

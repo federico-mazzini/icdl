@@ -7,7 +7,7 @@
 // Le integrazioni seguono solo la sezione 1 di syllabus.pdf, pagine 3–4.
 // Unico sorgente Typst: i file SVG contengono solo immagini, forme e diagrammi.
 // Nessuna slide è incorporata come screenshot; tutti i testi estratti sono qui sotto.
-// Compilazione: typst compile 1_computer_dispositivi.typ dist/1_computer_dispositivi.pdf
+// Compilazione: typst compile --root . src/1_computer_dispositivi.typ dist/1_computer_dispositivi.pdf
 
 #let rosso = rgb("#c00000")
 #let grigio = rgb("#555555")
@@ -115,7 +115,7 @@ Per organizzare una gita possiamo usare un foglio elettronico per i costi e una 
 ]
 
 // 02. Intro al computer.pdf, pagina 2 — Il computer / Questi sono / computer!
-#slide(grafica: "assets/slide/introduzione-02.svg", titolo: "Il computer / Questi sono / computer!")[
+#slide(grafica: "../assets/slide/introduzione-02.svg", titolo: "Il computer / Questi sono / computer!")[
   #riga(480, 82.34, 35, tinta: rosso, centro: true, ampiezza: 221.172)[#text(weight: "bold", "Il computer")]
   #riga(480, 115.79, 27, centro: true, ampiezza: 182.331)[#text(weight: "bold", "Alcuni esempi")]
   #riga(29.8, 528.275, 9.68, ampiezza: 170.755)[#text("IIS Polo Tecnico Professionale di Lugo")]
@@ -125,7 +125,7 @@ Per organizzare una gita possiamo usare un foglio elettronico per i costi e una 
 ]
 
 // 03. Intro al computer.pdf, pagina 3 — Ma anche questi / sono computer! / Il computer
-#slide(grafica: "assets/slide/introduzione-03.svg", titolo: "Ma anche questi / sono computer! / Il computer")[
+#slide(grafica: "../assets/slide/introduzione-03.svg", titolo: "Ma anche questi / sono computer! / Il computer")[
   #riga(480, 115.79, 27, centro: true, ampiezza: 182.331)[#text(weight: "bold", "Alcuni esempi")]
   #riga(29.8, 528.275, 9.68, ampiezza: 170.755)[#text("IIS Polo Tecnico Professionale di Lugo")]
   #riga(831.386, 528.275, 9.68, ampiezza: 98.813)[#text("Prof. Federico Mazzini")]
@@ -135,7 +135,7 @@ Per organizzare una gita possiamo usare un foglio elettronico per i costi e una 
 ]
 
 // 04. Intro al computer.pdf, pagina 4 — Il computer
-#slide(grafica: "assets/slide/introduzione-04.svg", titolo: "Il computer")[
+#slide(grafica: "../assets/slide/introduzione-04.svg", titolo: "Il computer")[
   #riga(480, 115.79, 27, centro: true, ampiezza: 120.258)[#text(weight: "bold", "Tipologie")]
   #riga(480, 82.34, 35, tinta: rosso, centro: true, ampiezza: 221.172)[#text(weight: "bold", "Il computer")]
   #riga(204.386, 162, 15, ampiezza: 693.912)[#text(weight: "bold", "I COMPUTER")#text(" ")#text(weight: "bold", "DESKTOP")#text(" (chiamati anche computer fissi) vengono chiamati così proprio perché ")]
@@ -165,7 +165,7 @@ Anche uno smartphone può svolgere queste funzioni. La differenza è che un disp
 ]
 
 // 10. Intro al computer.pdf, pagina 10 — Software e Hardware
-#slide(grafica: "assets/slide/introduzione-10.svg", titolo: "Software e Hardware")[
+#slide(grafica: "../assets/slide/introduzione-10.svg", titolo: "Software e Hardware")[
   #riga(480, 82.34, 35, tinta: rosso, centro: true, ampiezza: 402.486)[#text(weight: "bold", "Software e Hardware")]
   #riga(29.8, 528.275, 9.68, ampiezza: 170.755)[#text("IIS Polo Tecnico Professionale di Lugo")]
   #riga(831.386, 528.275, 9.68, ampiezza: 98.813)[#text("Prof. Federico Mazzini")]
@@ -193,7 +193,7 @@ Anche uno smartphone può svolgere queste funzioni. La differenza è che un disp
 ]
 
 // 18. Hardware.pdf, pagina 8 — Componenti di un computer
-#slide(grafica: "assets/slide/hardware-08.svg", titolo: "Componenti di un computer")[
+#slide(grafica: "../assets/slide/hardware-08.svg", titolo: "Componenti di un computer")[
   #riga(480, 82.34, 35, tinta: rosso, centro: true, ampiezza: 539.574)[#text(weight: "bold", "Componenti di un computer")]
   #riga(480, 115.79, 27, centro: true, ampiezza: 55.971)[#text(weight: "bold", "CPU")]
   #riga(47, 196.268, 20, ampiezza: 500.02)[#text("La ")#text(weight: "bold", "CPU")#text(" (")#text(weight: "bold", "Central")#text(" ")#text(weight: "bold", "Processing")#text(" ")#text(weight: "bold", "Unit")#text(") o ")#text(weight: "bold", "processore")#text(", è il ")]
@@ -207,7 +207,7 @@ Anche uno smartphone può svolgere queste funzioni. La differenza è che un disp
 ]
 
 // 28. Hardware.pdf, pagina 18 — CPU
-#slide(grafica: "assets/slide/hardware-18.svg", titolo: "CPU")[
+#slide(grafica: "../assets/slide/hardware-18.svg", titolo: "CPU")[
   #riga(240, 82.84, 35, tinta: rosso, centro: true, ampiezza: 86.226)[#text(weight: "bold", "CPU")]
   #riga(240, 115.79, 27, centro: true, ampiezza: 241.272)[#text(weight: "bold", "Frequenza di clock")]
   #riga(54.5, 171.55, 15, ampiezza: 420.702)[#text("La frequenza di clock indica la ")#text(weight: "bold", "velocità")#text(" ")#text(weight: "bold", "con cui la CPU ")]
@@ -228,7 +228,7 @@ Anche uno smartphone può svolgere queste funzioni. La differenza è che un disp
 ]
 
 // 29. Hardware.pdf, pagina 19 — CPU
-#slide(grafica: "assets/slide/hardware-19.svg", titolo: "CPU")[
+#slide(grafica: "../assets/slide/hardware-19.svg", titolo: "CPU")[
   #riga(240, 82.84, 35, tinta: rosso, centro: true, ampiezza: 86.226)[#text(weight: "bold", "CPU")]
   #riga(240, 115.79, 27, centro: true, ampiezza: 62.613)[#text(weight: "bold", "Core")]
   #riga(58.619, 165.724, 16.5, ampiezza: 409.721)[#text("Una CPU dotata di un singolo core esegue un’unica ")]
@@ -261,7 +261,7 @@ Anche uno smartphone può svolgere queste funzioni. La differenza è che un disp
 ]
 
 // 20. Hardware.pdf, pagina 10 — Componenti di un computer
-#slide(grafica: "assets/slide/hardware-10.svg", titolo: "Componenti di un computer")[
+#slide(grafica: "../assets/slide/hardware-10.svg", titolo: "Componenti di un computer")[
   #riga(51.165, 178.065, 20, ampiezza: 557.035)[#text("La ")#text(weight: "bold", "memoria")#text(" ")#text(weight: "bold", "centrale")#text(" è la ")#text(weight: "bold", "principale")#text(" del computer. Viene ")]
   #riga(51.165, 204.565, 20, ampiezza: 557.037)[#text("utilizzata per ")#text(weight: "bold", "memorizzare")#text(" i ")#text(weight: "bold", "dati")#text(" e i ")#text(weight: "bold", "programmi")#text(" ")]
   #riga(51.165, 231.065, 20, ampiezza: 557.037)[#text(weight: "bold", "attualmente")#text(" ")#text(weight: "bold", "in")#text(" ")#text(weight: "bold", "esecuzione")#text(". E’ una memoria ")#text(weight: "bold", "temporanea")#text(" ")]
@@ -274,7 +274,7 @@ Anche uno smartphone può svolgere queste funzioni. La differenza è che un disp
 ]
 
 // 33. Hardware.pdf, pagina 23 — Memoria
-#slide(grafica: "assets/slide/hardware-23.svg", titolo: "Memoria")[
+#slide(grafica: "../assets/slide/hardware-23.svg", titolo: "Memoria")[
   #riga(47, 171.475, 17.5, ampiezza: 470)[#text("La RAM (Random Access Memory) è una memoria ad accesso casuale.")]
   #riga(47, 190.475, 17.5, ampiezza: 360.238)[#text("Le sue caratteristiche sono:")]
   #riga(72, 207.475, 17.5, ampiezza: 438.523)[#text(weight: "bold", "•")#text(weight: "bold", " ")#text(weight: "bold", "tempo di accesso rapido")#text(" e garantisce alte ")]
@@ -312,7 +312,7 @@ Anche uno smartphone può svolgere queste funzioni. La differenza è che un disp
 ]
 
 // 34. Hardware.pdf, pagina 24 — Memoria
-#slide(grafica: "assets/slide/hardware-24.svg", titolo: "Memoria")[
+#slide(grafica: "../assets/slide/hardware-24.svg", titolo: "Memoria")[
   #riga(47, 170.096, 16.975, ampiezza: 183.619)[#text(weight: "bold", "Hard Disk Drive(HDD)")#text(" ")]
   #riga(47, 192.096, 16.975, ampiezza: 500.559)[#text("Gli Hard Disk funzionano grazie a ")#text(weight: "bold", "dischi magnetici rotanti ")#text("e ")]
   #riga(47, 214.096, 16.975, ampiezza: 500.55)[#text("parti meccaniche ")#text(weight: "bold", "mobili")#text(" (come le testine di lettura e ")]
@@ -343,7 +343,7 @@ Le prestazioni dipendono da *più componenti che lavorano insieme*.
 ]
 
 // 21. Hardware.pdf, pagina 11 — Componenti di un computer
-#slide(grafica: "assets/slide/hardware-11.svg", titolo: "Componenti di un computer")[
+#slide(grafica: "../assets/slide/hardware-11.svg", titolo: "Componenti di un computer")[
   #riga(480, 82.34, 35, tinta: rosso, centro: true, ampiezza: 539.574)[#text(weight: "bold", "Componenti di un computer")]
   #riga(480, 115.79, 27, centro: true, ampiezza: 244.566)[#text(weight: "bold", "Periferiche di input")]
   #riga(75.884, 180.027, 17.5, ampiezza: 808.833)[#text("Una periferica di input è qualsiasi dispositivo che permette al computer di ")#text(weight: "bold", "ricevere dati e comandi ")]
@@ -354,7 +354,7 @@ Le prestazioni dipendono da *più componenti che lavorano insieme*.
 ]
 
 // 22. Hardware.pdf, pagina 12 — Componenti di un computer
-#slide(grafica: "assets/slide/hardware-12.svg", titolo: "Componenti di un computer")[
+#slide(grafica: "../assets/slide/hardware-12.svg", titolo: "Componenti di un computer")[
   #riga(480, 82.34, 35, tinta: rosso, centro: true, ampiezza: 539.574)[#text(weight: "bold", "Componenti di un computer")]
   #riga(480, 115.79, 27, centro: true, ampiezza: 263.628)[#text(weight: "bold", "Periferiche di output")]
   #riga(75.884, 192.022, 17.5, ampiezza: 795.148)[#text("Una periferica di output è qualsiasi dispositivo che permette al computer di mostrare risultati e/o ")]
@@ -364,7 +364,7 @@ Le prestazioni dipendono da *più componenti che lavorano insieme*.
 ]
 
 // 23. Hardware.pdf, pagina 13 — Componenti di un computer
-#slide(grafica: "assets/slide/hardware-13.svg", titolo: "Componenti di un computer")[
+#slide(grafica: "../assets/slide/hardware-13.svg", titolo: "Componenti di un computer")[
   #riga(480, 82.34, 35, tinta: rosso, centro: true, ampiezza: 539.574)[#text(weight: "bold", "Componenti di un computer")]
   #riga(480, 115.79, 27, centro: true, ampiezza: 339.984)[#text(weight: "bold", "Periferiche di input/output")]
   #riga(75.884, 180.027, 17.5, ampiezza: 785.698)[#text("Una periferica di input/output è un dispositivo con duplice funzione, permette di ")#text(weight: "bold", "ricevere dati e ")]
@@ -393,7 +393,7 @@ Può mettere a disposizione porte per monitor, tastiera, mouse, rete e altri dis
 ]
 
 // 24. Hardware.pdf, pagina 14 — Componenti di un computer
-#slide(grafica: "assets/slide/hardware-14.svg", titolo: "Componenti di un computer")[
+#slide(grafica: "../assets/slide/hardware-14.svg", titolo: "Componenti di un computer")[
   #riga(480, 82.34, 35, tinta: rosso, centro: true, ampiezza: 539.574)[#text(weight: "bold", "Componenti di un computer")]
   #riga(480, 115.79, 27, centro: true, ampiezza: 335.097)[#text(weight: "bold", "Interfacce e porte esterne")]
   #riga(83.412, 274.106, 15, ampiezza: 130.08)[#text(weight: "bold", "Esempi principali ")]
@@ -442,7 +442,7 @@ La porta *HDMI* trasporta *video e audio digitali*. Si usa, ad esempio, per coll
 ]
 
 // 43. Software.pdf, pagina 4 — Software
-#slide(grafica: "assets/slide/software-04.svg", titolo: "Software")[
+#slide(grafica: "../assets/slide/software-04.svg", titolo: "Software")[
   #riga(480, 82.34, 35, tinta: rosso, centro: true, ampiezza: 174.804)[#text(weight: "bold", "Software")]
   #riga(480, 115.79, 27, centro: true, ampiezza: 150.498)[#text(weight: "bold", "Programma")]
   #riga(51.745, 180.48, 17.5, ampiezza: 868.105)[#text("Un programma è un ")#text(weight: "bold", "insieme di istruzioni")#text(", ")#text(weight: "bold", "leggibili")#text(" da un computer, per ")#text(weight: "bold", "risolvere")#text(" in maniera ")#text(weight: "bold", "automatica")#text(" ")]
@@ -459,7 +459,7 @@ La porta *HDMI* trasporta *video e audio digitali*. Si usa, ad esempio, per coll
 ]
 
 // 44. Software.pdf, pagina 5 — Software
-#slide(grafica: "assets/slide/software-05.svg", titolo: "Software")[
+#slide(grafica: "../assets/slide/software-05.svg", titolo: "Software")[
   #riga(527.058, 224.842, 17.325, ampiezza: 385.859)[#text("Tutti i software (programmi) che permettono di ")]
   #riga(527.058, 247.842, 17.325, ampiezza: 275.658)[#text("svolgere attività utili per gli utenti ")]
   #riga(549.058, 283.217, 17.325, ampiezza: 234.887)[#text("•")#text(" ")#text("Scrivere testi, mail, codice ")]
@@ -485,7 +485,7 @@ La porta *HDMI* trasporta *video e audio digitali*. Si usa, ad esempio, per coll
 ]
 
 // 46. Software.pdf, pagina 7 — Sistema operativo
-#slide(grafica: "assets/slide/software-07.svg", titolo: "Sistema operativo")[
+#slide(grafica: "../assets/slide/software-07.svg", titolo: "Sistema operativo")[
   #riga(480, 82.34, 35, tinta: rosso, centro: true, ampiezza: 346.122)[#text(weight: "bold", "Sistema operativo")]
   #riga(480, 115.768, 27, centro: true, ampiezza: 481.005)[#text(weight: "bold", "Funzioni principali e astrazioni fornite")]
   #riga(235.41, 337.059, 15, ampiezza: 159.48)[#text("Esegue le applicazioni ")]
@@ -527,7 +527,7 @@ Un’applicazione deve essere compatibile con il sistema operativo e con il disp
 ]
 
 // 49. Software.pdf, pagina 10 — Software applicativo
-#slide(grafica: "assets/slide/software-10.svg", titolo: "Software applicativo")[
+#slide(grafica: "../assets/slide/software-10.svg", titolo: "Software applicativo")[
   #riga(38.801, 164.772, 17.5, ampiezza: 566.23)[#text("È il software che serve all’utente finale per fare qualcosa di concreto. ")]
   #riga(38.801, 200.772, 17.5, ampiezza: 893.997)[#text("Viene sempre eseguito dal sistema operativo, non comunica direttamente con l’hardware o la rete. Il S.O. ")]
   #riga(38.801, 224.272, 17.5, ampiezza: 894.005)[#text("fornisce gli strumenti, il software applicativo li usa per realizzare un obiettivo (scrittura di documenti, ")]
