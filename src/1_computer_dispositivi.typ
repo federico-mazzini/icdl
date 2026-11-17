@@ -4,7 +4,9 @@
 // Modello: https://github.com/federico-mazzini/dispense-comunicazione/blob/main/styles/slides.typ
 // Palette, carattere, formato 960 × 540, fregio e numerazione dal modello.
 // Le slide mantenute conservano posizioni, immagini e testi dai PDF in mie_slide/.
-// Le integrazioni seguono solo la sezione 1 di syllabus.pdf, pagine 3–4.
+// Le integrazioni seguono la sezione 1 di syllabus.pdf, pagine 3–4.
+// Su richiesta del docente, reinserite da originali mie le slide 13, 14, 16, 17 e 42.
+// Le slide su Von Neumann, case e scheda madre sono approfondimenti concordati.
 // Unico sorgente Typst: i file SVG contengono solo immagini, forme e diagrammi.
 // Nessuna slide è incorporata come screenshot; tutti i testi estratti sono qui sotto.
 // Compilazione: typst compile --root . src/1_computer_dispositivi.typ dist/1_computer_dispositivi.pdf
@@ -188,6 +190,65 @@ Anche uno smartphone può svolgere queste funzioni. La differenza è che un disp
 #slide(titolo: "Hardware")[
   #riga(480, 267.16, 58, tinta: rosso, centro: true, ampiezza: 261.58)[#text(weight: "bold", "Hardware")]
   #riga(480, 312.14, 32, centro: true, ampiezza: 469.184)[#text(weight: "bold", "Le componenti di un computer")]
+  #riga(29.8, 528.275, 9.68, ampiezza: 156.758)[#text("Polo Tecnico Professionale di Lugo")]
+  #riga(831.386, 528.275, 9.68, ampiezza: 98.813)[#text("Prof. Federico Mazzini")]
+]
+
+// 13. Hardware.pdf, pagina 3 — Architettura di Von Neumann
+#slide(grafica: "../assets/slide/hardware-03.svg", titolo: "Architettura di Von Neumann")[
+  #riga(480, 82.34, 35, tinta: rosso, centro: true, ampiezza: 555.576)[#text(weight: "bold", "Architettura di Von Neumann")]
+  #riga(480, 115.79, 27, centro: true, ampiezza: 552.042)[#text(weight: "bold", "Funzionamento di un computer in generale")]
+  #riga(47, 171.475, 17.5, ampiezza: 562.328)[#text("Possiamo schematizzare il lavoro di un computer nel modo seguente")]
+  #riga(47, 376.459, 17.5, ampiezza: 686.893)[#text(weight: "bold", "Input")#text(": il computer riceve dati dall’esterno, ad esempio da tastiera, mouse o sensori. ")]
+  #riga(47, 411.959, 17.5, ampiezza: 782.705)[#text(weight: "bold", "Elaborazione")#text(": i dati vengono processati dal processore, seguendo istruzioni memorizzate nella ")]
+  #riga(47, 435.459, 17.5, ampiezza: 207.988)[#text("memoria (il programma). ")]
+  #riga(47, 470.959, 17.5, ampiezza: 808.378)[#text(weight: "bold", "Output")#text(": viene elaborato un risultato e restituito in output, ad esempio mostrandolo sullo schermo, ")]
+  #riga(47, 494.459, 17.5, ampiezza: 518.49)[#text("stampandolo su un foglio, salvandolo su un dispositivo esterno.")]
+  #riga(29.8, 528.275, 9.68, ampiezza: 156.758)[#text("Polo Tecnico Professionale di Lugo")]
+  #riga(831.386, 528.275, 9.68, ampiezza: 98.813)[#text("Prof. Federico Mazzini")]
+]
+
+// 14. Hardware.pdf, pagina 4 — Architettura di Von Neumann
+#slide(grafica: "../assets/slide/hardware-04.svg", titolo: "Architettura di Von Neumann")[
+  #riga(480, 82.34, 35, tinta: rosso, centro: true, ampiezza: 555.576)[#text(weight: "bold", "Architettura di Von Neumann")]
+  #riga(480, 115.79, 27, centro: true, ampiezza: 154.494)[#text(weight: "bold", "Idea di base")]
+  #riga(47, 171.475, 17.5, ampiezza: 475.885)[#text("L’architettura di Von Neumann è il ")#text(weight: "bold", "modello alla base dei ")]
+  #riga(47, 194.975, 17.5, ampiezza: 477.078)[#text(weight: "bold", "computer moderni")#text(". L’idea è quella di avere un unica ")]
+  #riga(47, 218.475, 17.5, ampiezza: 477.078)[#text("memoria in cui vengono mantenuti sia i ")#text(weight: "bold", "dati")#text(" sia le ")]
+  #riga(47, 241.975, 17.5, ampiezza: 196.962)[#text(weight: "bold", "istruzioni")#text(" (programmi). ")]
+  #riga(47, 277.475, 17.5, ampiezza: 187.915)[#text("Componenti principali ")]
+  #riga(72, 312.975, 17.5, ampiezza: 57.552)[#text(weight: "bold", "•")#text(weight: "bold", " ")#text(weight: "bold", "CPU ")]
+  #riga(72, 348.475, 17.5, ampiezza: 171.109)[#text(weight: "bold", "•")#text(weight: "bold", " ")#text(weight: "bold", "Memoria centrale ")]
+  #riga(72, 383.975, 17.5, ampiezza: 129.337)[#text(weight: "bold", "•")#text(weight: "bold", " ")#text(weight: "bold", "Input/output ")]
+  #riga(72, 419.475, 17.5, ampiezza: 47.839)[#text(weight: "bold", "•")#text(weight: "bold", " ")#text(weight: "bold", "Bus")]
+  #riga(29.8, 528.275, 9.68, ampiezza: 156.758)[#text("Polo Tecnico Professionale di Lugo")]
+  #riga(831.386, 528.275, 9.68, ampiezza: 98.813)[#text("Prof. Federico Mazzini")]
+]
+
+// 16. Hardware.pdf, pagina 6 — Componenti di un computer
+#slide(grafica: "../assets/slide/hardware-06.svg", titolo: "Componenti di un computer")[
+  #riga(480, 82.34, 35, tinta: rosso, centro: true, ampiezza: 539.574)[#text(weight: "bold", "Componenti di un computer")]
+  #riga(480, 115.79, 27, centro: true, ampiezza: 64.206)[#text(weight: "bold", "Case")]
+  #riga(49.819, 194.914, 20, ampiezza: 670)[#text("Il ")#text(weight: "bold", "case ")#text("è il contenitore che ospita e protegge i componenti interni di un ")]
+  #riga(49.819, 221.414, 20, ampiezza: 101.82)[#text("computer. ")]
+  #riga(49.819, 259.914, 20, ampiezza: 184.44)[#text(weight: "bold", "Funzioni principali ")]
+  #riga(64.819, 298.414, 20, ampiezza: 583.582)[#text("•")#text(weight: "bold", " ")#text(weight: "bold", "Protezione")#text(": protegge i componenti interni da polvere e urti  ")]
+  #riga(64.819, 336.914, 20, ampiezza: 485.442)[#text("•")#text(weight: "bold", " ")#text(weight: "bold", "Struttura")#text(": tiene insieme tutti i componenti interni ")]
+  #riga(64.819, 375.414, 20, ampiezza: 578.582)[#text("•")#text(weight: "bold", " ")#text(weight: "bold", "Accesso")#text(": permette di collegare dispositivi di input e output ")]
+  #riga(64.819, 413.914, 20, ampiezza: 99.282)[#text(weight: "bold", "•")#text(weight: "bold", " ")#text(weight: "bold", "Estetica ")]
+  #riga(46.773, 457.013, 17.5, ampiezza: 819.788)[#text("Nei portatili e smartphone non si parla sempre di ")#text(style: "italic", "case")#text(" ma di ")#text(style: "italic", "scocca")#text(" o ")#text(style: "italic", "cover")#text(". La funzione è la stessa: ")]
+  #riga(46.773, 480.513, 17.5, ampiezza: 559.703)[#text("protezione + struttura + raffreddamento (anche se molto più ridotto).")]
+  #riga(29.8, 528.275, 9.68, ampiezza: 156.758)[#text("Polo Tecnico Professionale di Lugo")]
+  #riga(831.386, 528.275, 9.68, ampiezza: 98.813)[#text("Prof. Federico Mazzini")]
+]
+
+// 17. Hardware.pdf, pagina 7 — Componenti di un computer
+#slide(grafica: "../assets/slide/hardware-07.svg", titolo: "Componenti di un computer")[
+  #riga(480, 82.34, 35, tinta: rosso, centro: true, ampiezza: 539.574)[#text(weight: "bold", "Componenti di un computer")]
+  #riga(480, 115.79, 27, centro: true, ampiezza: 186.219)[#text(weight: "bold", "Scheda madre")]
+  #riga(75.884, 181.752, 20, ampiezza: 786.16)[#text("La ")#text(weight: "bold", "scheda")#text(" ")#text(weight: "bold", "madre")#text(" è il cuore di ogni computer. Si tratta di una ")#text(weight: "bold", "piastra")#text(" ")#text(weight: "bold", "che raccoglie ")]
+  #riga(75.884, 208.252, 20, ampiezza: 788.38)[#text(weight: "bold", "tutti i componenti principali ")#text("e li ")#text(weight: "bold", "collega")#text(" tra loro mediante collegamenti stampati di ")]
+  #riga(75.884, 234.752, 20, ampiezza: 675)[#text("rame. A seconda del dispositivo, può essere di dimensioni molto diverse")]
   #riga(29.8, 528.275, 9.68, ampiezza: 156.758)[#text("Polo Tecnico Professionale di Lugo")]
   #riga(831.386, 528.275, 9.68, ampiezza: 98.813)[#text("Prof. Federico Mazzini")]
 ]
@@ -433,6 +494,21 @@ La porta *HDMI* trasporta *video e audio digitali*. Si usa, ad esempio, per coll
 #slide(titolo: "Software")[
   #riga(480, 82.34, 35, tinta: rosso, centro: true, ampiezza: 174.804)[#text(weight: "bold", "Software")]
   #riga(483.213, 115.768, 27, centro: true, ampiezza: 441.126)[#text(weight: "bold", "Il comportamento di un computer ")]
+  #riga(85.759, 180.449, 17.5, ampiezza: 716.864)[#text("•")#text(" ")#text("Tutto ciò che in un computer è non fisico e non tangibile prende il nome di software.  ")]
+  #riga(85.759, 216.449, 17.5, ampiezza: 756.099)[#text("•")#text(" ")#text("Il software da al computer un comportamento e uno scopo ed è costituito dai programmi. ")]
+  #riga(85.759, 252.449, 17.5, ampiezza: 776.837)[#text("•")#text(" ")#text("In ogni computer, vi è una netta ")#text(weight: "bold", "separazione")#text(" tra la macchina fisica, l’")#text(weight: "bold", "hardware")#text(", dal ")]
+  #riga(101.801, 275.949, 17.5, ampiezza: 463.452)[#text("programma che la macchina sta eseguendo, il ")#text(weight: "bold", "software.")]
+  #riga(29.8, 528.275, 9.68, ampiezza: 156.758)[#text("Polo Tecnico Professionale di Lugo")]
+  #riga(831.386, 528.275, 9.68, ampiezza: 98.813)[#text("Prof. Federico Mazzini")]
+]
+
+// 42. Software.pdf, pagina 3 — Software / I computer sono macchine universali
+#slide(titolo: "Software / I computer sono macchine universali")[
+  #riga(150.468, 402.599, 20, ampiezza: 663.002)[#text(weight: "bold", "Il comportamento di un computer è definito dalle istruzioni che la ")]
+  #riga(150.468, 429.099, 20, ampiezza: 527.64)[#text(weight: "bold", "macchina segue, non da come è costruita fisicamente.")]
+  #riga(480, 82.34, 35, tinta: rosso, centro: true, ampiezza: 174.804)[#text(weight: "bold", "Software")]
+  #riga(483.213, 115.768, 27, centro: true, ampiezza: 441.126)[#text(weight: "bold", "Il comportamento di un computer ")]
+  #riga(480, 359.565, 40, tinta: rosso, centro: true, ampiezza: 668.12)[#text(weight: "bold", "I computer sono macchine universali")]
   #riga(85.759, 180.449, 17.5, ampiezza: 716.864)[#text("•")#text(" ")#text("Tutto ciò che in un computer è non fisico e non tangibile prende il nome di software.  ")]
   #riga(85.759, 216.449, 17.5, ampiezza: 756.099)[#text("•")#text(" ")#text("Il software da al computer un comportamento e uno scopo ed è costituito dai programmi. ")]
   #riga(85.759, 252.449, 17.5, ampiezza: 776.837)[#text("•")#text(" ")#text("In ogni computer, vi è una netta ")#text(weight: "bold", "separazione")#text(" tra la macchina fisica, l’")#text(weight: "bold", "hardware")#text(", dal ")]

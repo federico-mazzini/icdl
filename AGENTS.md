@@ -5,7 +5,7 @@
 - Mantieni `README.md` con i soli link alle presentazioni pubblicate, ai relativi sorgenti in `src/` e all’indice dei PDF. Inserisci qui le istruzioni operative e le note tecniche.
 - Ogni presentazione ha un unico sorgente `.typ` in `src/`. Le risorse grafiche sono in `assets/` e i percorsi nei sorgenti partono da `../assets/`. Compila con `--root .` dalla radice del repository.
 - Conserva `src/originali mie.typ` come versione integrale delle slide del docente; modificala solo su richiesta esplicita. Non alterare i PDF di origine in `mie_slide/`.
-- Per `src/1_computer_dispositivi.typ`, segui soltanto la sezione 1 del file locale `syllabus.pdf`, mantenendo la copertura dei 13 riferimenti riportati sotto.
+- Per `src/1_computer_dispositivi.typ`, segui la sezione 1 del file locale `syllabus.pdf`, mantenendo la copertura dei 13 riferimenti riportati sotto. Su richiesta esplicita del docente, includi anche le slide 13, 14, 16, 17 e 42 di **originali mie**, negli stessi punti della sequenza degli argomenti.
 - Mantieni formato 960 × 540 punti, Libertinus Serif, titoli rossi `#c00000`, impaginazione, immagini e stile narrativo del docente. I testi devono restare modificabili in Typst.
 - Quando modifichi le slide, compila con Typst 0.15.1 tramite `bash scripts/build.sh`, controlla visivamente le pagine modificate e verifica conteggio, numerazione, testi e assenza di sovrapposizioni o contenuti fuori pagina.
 - Non versionare `dist/`: contiene PDF e indice generati. La build compila tutti i sorgenti `.typ` di `src/`.
@@ -22,7 +22,7 @@ Sono disponibili quattro presentazioni, ciascuna con un unico sorgente Typst:
 | Versione | Sorgente | PDF | Contenuto |
 | --- | --- | --- | --- |
 | Originali mie | `src/originali mie.typ` | `dist/originali mie.pdf` | Tutte le 49 slide della prima conversione |
-| 1. Computer e dispositivi | `src/1_computer_dispositivi.typ` | `dist/1_computer_dispositivi.pdf` | 47 slide: 26 riprese dalle originali e 21 nuove |
+| 1. Computer e dispositivi | `src/1_computer_dispositivi.typ` | `dist/1_computer_dispositivi.pdf` | 52 slide: 31 riprese dalle originali e 21 nuove |
 | 2. Desktop, icone e impostazioni | `src/2_desktop_icone_impostazioni.typ` | `dist/2_desktop_icone_impostazioni.pdf` | 8 slide, selezione concordata dei punti della sezione 2 |
 | 4. Gestione di file | `src/4_gestione_file.typ` | `dist/4_gestione_file.pdf` | 23 slide, selezione ridotta concordata della sezione 4 |
 
@@ -73,11 +73,11 @@ La build usa Typst 0.15.1 e pubblica i PDF con nomi stabili, senza cambiare i li
 
 ### 1. Computer e dispositivi
 
-La seconda versione segue esclusivamente la sezione 1 del file locale `syllabus.pdf` (pagine 3–4). Mantiene il formato, il carattere, i colori e le risorse grafiche della conversione originale. I testi aggiunti seguono lo stile delle slide del docente: definizioni dirette, esempi quotidiani e spiegazioni del rapporto tra componenti e funzioni.
+La seconda versione segue la sezione 1 del file locale `syllabus.pdf` (pagine 3–4). Mantiene il formato, il carattere, i colori e le risorse grafiche della conversione originale. I testi aggiunti seguono lo stile delle slide del docente: definizioni dirette, esempi quotidiani e spiegazioni del rapporto tra componenti e funzioni.
 
 Le 21 nuove slide comprendono due copertine, 18 slide di spiegazione e una prova pratica finale. Le integrazioni riguardano ICT e suoi utilizzi; lettori multimediali e fotocamere; impatto di CPU, RAM e memoria di massa sulle prestazioni; periferiche integrate ed esterne, trackpad, webcam e docking station; USB e HDMI; esempi di sistemi operativi e applicazioni; software locale e online; EULA e tipi di licenza; accensione, accesso sicuro, blocco, disconnessione, spegnimento e riavvio.
 
-Sono escluse le tre slide dell’attività sui pancake, gli approfondimenti su sistemi embedded e server, l’architettura di Von Neumann, transistor, cache e ROM, il dettaglio su case, scheda madre e componenti aggiuntivi, il file system e le slide duplicate o di raccordo non necessarie. Questi contenuti restano nella versione **originali mie**. Le 26 slide riprese conservano immagini e disposizione. Nella slide 16 è esplicitato il significato di RAM (Random Access Memory); nella 22 è corretta la definizione delle periferiche di input/output, che devono svolgere entrambe le funzioni. La versione originale di 49 slide rimane invariata.
+Sono escluse le tre slide dell’attività sui pancake, gli approfondimenti su sistemi embedded e server, transistor, cache e ROM, il dettaglio sui componenti aggiuntivi, il file system e le slide duplicate o di raccordo non necessarie. Questi contenuti restano nella versione **originali mie**. Su richiesta del docente sono state reinserite le slide 13, 14, 16, 17 e 42 di **originali mie**: Von Neumann, case, scheda madre e computer come macchine universali. Le prime quattro seguono la copertina Hardware (pagine 11–14); la 42 segue la definizione di software (pagina 33). Le 31 slide riprese conservano immagini e disposizione. Nella slide 20 è esplicitato il significato di RAM (Random Access Memory); nella 26 è corretta la definizione delle periferiche di input/output, che devono svolgere entrambe le funzioni. La versione originale di 49 slide rimane invariata.
 
 #### Copertura del syllabus
 
@@ -86,20 +86,20 @@ Sono escluse le tre slide dell’attività sui pancake, gli approfondimenti su s
 | 1.1.1 | Definizione di ICT | 2 |
 | 1.1.2 | Servizi Internet, tecnologie mobili e produttività | 3 |
 | 1.2.1 | Hardware, tipi di computer e dispositivi | 4, 5, 6, 7, 8, 9, 10 |
-| 1.2.2 | CPU, RAM, memoria di massa e prestazioni | 11, 12, 13, 14, 15, 16, 17, 18, 19 |
-| 1.2.3 | Periferiche integrate ed esterne | 20, 21, 22, 23, 24 |
-| 1.2.4 | Porte di input/output, USB e HDMI | 25, 26 |
-| 1.3.1 | Software, sistemi operativi e applicazioni; locale e online | 9, 27, 28, 29, 30, 38 |
-| 1.3.2 | Sistemi operativi ed esempi | 30, 31, 32, 33 |
-| 1.3.3 | Tipi di applicazioni ed esempi | 30, 34, 35, 36, 37 |
-| 1.3.4 | EULA e licenza d’uso | 39 |
-| 1.3.5 | Proprietario, open source, trial, shareware e freeware | 40, 41 |
-| 1.4.1 | Accensione e accesso sicuro | 43, 44, 47 |
-| 1.4.2 | Disconnessione, spegnimento e riavvio | 44, 45, 46, 47 |
+| 1.2.2 | CPU, RAM, memoria di massa e prestazioni | 15, 16, 17, 18, 19, 20, 21, 22, 23 |
+| 1.2.3 | Periferiche integrate ed esterne | 24, 25, 26, 27, 28 |
+| 1.2.4 | Porte di input/output, USB e HDMI | 29, 30 |
+| 1.3.1 | Software, sistemi operativi e applicazioni; locale e online | 9, 31, 32, 33, 34, 35, 43 |
+| 1.3.2 | Sistemi operativi ed esempi | 35, 36, 37, 38 |
+| 1.3.3 | Tipi di applicazioni ed esempi | 35, 39, 40, 41, 42 |
+| 1.3.4 | EULA e licenza d’uso | 44 |
+| 1.3.5 | Proprietario, open source, trial, shareware e freeware | 45, 46 |
+| 1.4.1 | Accensione e accesso sicuro | 48, 49, 52 |
+| 1.4.2 | Disconnessione, spegnimento e riavvio | 49, 50, 51, 52 |
 
 #### Verifica e riferimenti
 
-Compilata e controllata l’intera sequenza di 47 pagine. Confrontate le 26 slide riprese con la prima versione, tenendo conto delle due correzioni e del nuovo numero di pagina. Verificati i 13 riferimenti della sezione 1 e l’assenza di testo fuori pagina. I riferimenti al syllabus e la provenienza delle slide sono annotati anche nei commenti del sorgente, senza aggiungere etichette alle slide proiettate.
+Compilata e controllata la sequenza di 52 pagine. Verificate le cinque slide reinserite contro **originali mie**, conservando testi, immagini e disposizione e aggiornando il contatore progressivo. Le altre 47 pagine mantengono i contenuti precedenti, comprese le due correzioni su RAM e periferiche di input/output. Verificati i 13 riferimenti della sezione 1 e l’assenza di testo fuori pagina. I riferimenti al syllabus e la provenienza delle slide sono annotati anche nei commenti del sorgente, senza aggiungere etichette alle slide proiettate.
 
 Per le nuove spiegazioni su licenze e procedure di Windows sono state consultate fonti primarie:
 
