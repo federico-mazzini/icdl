@@ -2,7 +2,7 @@
 
 ## Lavoro nel repository
 
-- Mantieni `README.md` con i soli link alle presentazioni pubblicate, ai relativi sorgenti in `src/` e all’indice dei PDF. Inserisci qui le istruzioni operative e le note tecniche.
+- Mantieni `README.md` con i soli link alle presentazioni pubblicate, ai relativi sorgenti in `src/`, all’indice dei PDF, al pool di domande e agli script dei quiz. Inserisci qui le istruzioni operative e le note tecniche.
 - Ogni presentazione ha un unico sorgente `.typ` in `src/`. Le risorse grafiche sono in `assets/` e i percorsi nei sorgenti partono da `../assets/`. Compila con `--root .` dalla radice del repository.
 - Conserva `src/originali mie.typ` come versione integrale delle slide del docente; modificala solo su richiesta esplicita. Non alterare i PDF di origine in `mie_slide/`.
 - Per `src/1_computer_dispositivi.typ`, segui la sezione 1 del file locale `syllabus.pdf`, mantenendo la copertura dei 13 riferimenti riportati sotto. Su richiesta esplicita del docente, includi anche le slide 13, 14, 16, 17 e 42 di **originali mie**, negli stessi punti della sequenza degli argomenti.
@@ -163,6 +163,26 @@ Selezione aggiornata su indicazione del docente: eliminate le precedenti slide 9
 | 23 | Estrarre in Windows 10 — Scegliere la cartella di destinazione | 4.3.6 |
 
 Per le procedure sono stati consultati i riferimenti Microsoft su [Esplora file](https://support.microsoft.com/en-us/windows/experience/fileexplorer/file-explorer-in-windows), [ZIP](https://support.microsoft.com/en-us/windows/experience/storage-filemanagement/zip-and-unzip-files), [estensioni](https://support.microsoft.com/it-it/windows/experience/storage-filemanagement/common-file-name-extensions-in-windows) e [ricerca e indicizzazione](https://support.microsoft.com/en-us/windows/experience/performance-optimization/search-indexing-in-windows). Non confondere le procedure di Windows 10 con quelle di Windows 11. La ricerca nel contenuto dipende dalle impostazioni e dal tipo di file; il cestino non raccoglie necessariamente le eliminazioni da unità rimovibili o di rete.
+
+## Pool di domande
+
+- La cartella `domande/` contiene tre file Markdown: uno per ciascun pacco dei moduli 1, 2 e 4.
+- Ogni file contiene 100 domande, suddivise in 50 facili, 25 medie e 25 difficili. Non inserire riferimenti alle slide nelle domande, nelle soluzioni o nelle introduzioni.
+- Ogni domanda ha un identificatore stabile (`M1-001`, `M2-001`, `M4-001`), quattro opzioni A–D e l’indicazione esplicita di scelta singola o risposta multipla. Le soluzioni, con breve spiegazione, sono nella tabella finale.
+- Sono presenti 80 domande a scelta singola e 20 a risposta multipla per pacco. Nelle risposte multiple possono esserci due o tre opzioni corrette. Per le scelte singole la posizione corretta è distribuita in modo uniforme tra A, B, C e D.
+- Per i futuri Moduli Google, mantenere identificatori, testo, opzioni e chiave di risposta coerenti. I file sono il pool del docente e includono le soluzioni: i moduli per gli studenti andranno costruiti separatamente.
+- Le domande seguono gli argomenti effettivamente presenti nei tre pacchi, comprese le selezioni ridotte dei moduli 2 e 4. Non reinserire argomenti esclusi. La difficoltà maggiore deve richiedere collegamenti, valutazione di procedure o situazioni pratiche, non nozioni aggiuntive.
+- Prima di consegnare aggiornamenti, controllare conteggi per difficoltà, opzioni uniche, corrispondenza tra tipo e numero di risposte corrette, completezza delle soluzioni e assenza di domande duplicate.
+
+## Script per Moduli Google
+
+- In `apps-script/1_computer_dispositivi/` sono disponibili quattro script `.gs` autonomi, da incollare in Apps Script; non creano moduli nell’account del docente finché non vengono eseguiti.
+- Su scelta esplicita del docente, i quiz hanno 8–9 domande per ciascun livello, consentendo ripetizioni tra quiz diversi: distribuzioni 9/8/8, 8/9/8, 8/8/9, 9/8/8 per facili/medie/difficili.
+- Ogni quiz ha esattamente 25 domande: 20 singole e 5 multiple, tutte obbligatorie e da un punto. Non aggiungere automaticamente altre domande per nome o classe.
+- Ogni script include testi, opzioni, chiavi e spiegazioni del pool. Le funzioni `creaQuizComputer1`–`creaQuizComputer4` possono convivere nello stesso progetto; creano bozze e registrano i link di modifica e compilazione.
+- Il pool originale resta la fonte dei testi: se cambia una domanda usata, aggiornare gli script interessati e verificare le chiavi. Non mostrare riferimenti alle slide nei moduli.
+- Le proprietà del progetto impediscono duplicati dopo creazioni completate. Conservare i nomi distinti delle chiavi per i quattro quiz. Non sovrascrivere i moduli già creati in una nuova esecuzione.
+- Verifica locale: `node --test tests/apps_script_quiz.test.cjs`. I test usano una simulazione delle API; non equivalgono a un’esecuzione reale in Google.
 
 ## Modulo 1: revisione grafica PowerPoint
 

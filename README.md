@@ -7,3 +7,7 @@
 [**Originali mie — PDF**](https://federico-mazzini.github.io/icdl/originali%20mie.pdf) · [Sorgente Typst](src/originali%20mie.typ)
 
 [**Tutti i PDF**](https://federico-mazzini.github.io/icdl/)
+
+[**Pool di domande: moduli 1, 2 e 4**](domande/)
+
+[**Script per i quattro quiz: Computer e dispositivi**](apps-script/1_computer_dispositivi/)
