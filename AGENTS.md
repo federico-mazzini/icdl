@@ -17,13 +17,15 @@
 
 ## Presentazioni Typst
 
-Sono disponibili quattro presentazioni, ciascuna con un unico sorgente Typst:
+Sono disponibili sei presentazioni, ciascuna con un unico sorgente Typst:
 
 | Versione | Sorgente | PDF | Contenuto |
 | --- | --- | --- | --- |
 | Originali mie | `src/originali mie.typ` | `dist/originali mie.pdf` | Tutte le 49 slide della prima conversione |
 | 1. Computer e dispositivi | `src/1_computer_dispositivi.typ` | `dist/1_computer_dispositivi.pdf` | 46 slide: 31 riprese dalle originali e 15 nuove |
 | 2. Desktop, icone e impostazioni | `src/2_desktop_icone_impostazioni.typ` | `dist/2_desktop_icone_impostazioni.pdf` | 8 slide, selezione concordata dei punti della sezione 2 |
+| 2 - Desktop, icone e applicazioni | `src/2 - Desktop, icone e applicazioni.typ` | `dist/2 - Desktop, icone e applicazioni.pdf` | 31 slide, selezione dall’ebook |
+| 3 - Testi e stampe | `src/3 - Testi e stampe.typ` | `dist/3 - Testi e stampe.pdf` | 18 slide, selezione del capitolo 3 dell’ebook |
 | 4. Gestione di file | `src/4_gestione_file.typ` | `dist/4_gestione_file.pdf` | 23 slide, selezione ridotta concordata della sezione 4 |
 
 La presentazione iniziale, prima chiamata `presentazione`, è stata rinominata **originali mie**. Il PDF è stato rinominato senza modificarne il contenuto. Raccoglie i tre materiali originali in questo ordine:
@@ -209,3 +211,19 @@ Alcune immagini originali, in particolare porte, icone e schermate, hanno una ri
 
 SHA-256 dell’originale, verificato prima e dopo il lavoro:
 `8a4251de32916b45ae5268ff36f1aa0b99abe32eb415b7ad15e5a4103752b683`.
+
+## 2 - Desktop, icone e applicazioni: capitolo completo dell’ebook
+
+Su richiesta del docente, nuova presentazione completa distinta dalla precedente selezione breve. Il sorgente unico è `src/2 - Desktop, icone e applicazioni.typ`; l’output con nome stabile è `dist/2 - Desktop, icone e applicazioni.pdf`. Mantiene il modello della presentazione 2 esistente: 960 × 540 pt, Libertinus Serif, titoli rossi e numerazione progressiva.
+
+Fonte: `ICDL Computer Essentials eBook.pdf` (originale in Download), Mario R. Storchi, © 2020 AICA & Edizioni Manna, capitolo 2 “Desktop, icone, impostazioni”, pp. 23–38 (pagine PDF 24–39). La versione corrente contiene 31 slide: su richiesta del docente sono state eliminate le precedenti 8, 9, 10, 12, 14, 17, 18, 22, 25, 33, 35, 36 e 44. La copertura del capitolo è ora parziale; non reinserire automaticamente i contenuti rimossi. I crediti sono conservati nel sorgente e nel file delle fonti. La richiesta corrente autorizza in questa nuova versione anche gli argomenti esclusi dalla presentazione breve, che rimane invariata. Le immagini originali estratte e la mappatura per slide, con hash della fonte, sono in `assets/ebook-capitolo-2/` e `fonti.json`. I testi sono adattati per la proiezione, senza riproporre come istruzioni attuali i riferimenti obsoleti a Cortana o ai limiti sulle scorciatoie negli esami. Resta l’accenno alla tastiera predefinita.
+
+Compilazione con `bash scripts/build.sh` (Typst 0.15.1); testi misurati in Typst, formato e contatori controllati nel PDF, controllo visivo delle pagine renderizzate. La nuova versione non comporta modifiche automatiche ai pool di domande o ai quiz esistenti.
+
+## 3 - Testi e stampe
+
+Nuova presentazione richiesta dal docente, separata dalle altre: `src/3 - Testi e stampe.typ` → `dist/3 - Testi e stampe.pdf`. Contiene 18 slide (copertina inclusa), con lo stesso stile della presentazione 2. Su richiesta del docente sono state eliminate le precedenti slide 6, 7, 8, 17 e 20: inserimento, righe e paragrafi, selezione del testo, installazione manuale della stampante e stampante predefinita. La copertura è ora parziale: non reinserire automaticamente questi contenuti. Restano editor di testo, apertura e chiusura, copia e spostamento anche fra documenti, screenshot nel documento, salvataggio, installazione e rimozione stampanti, pagina di prova, stampa e coda.
+
+Fonte: Mario R. Storchi, `ICDL Computer Essentials eBook.pdf`, capitolo 3, pp. 39–44 (pagine PDF 40–45), © 2020 AICA & Edizioni Manna. Le nove immagini estratte, senza ridisegno, sono in `assets/ebook-capitolo-3/`; `fonti.json` conserva hash e mappatura per slide. Schermate e programmi sono quelli dell’ambiente del manuale. Non riproporre come istruzioni corrette i refusi sulle scorciatoie Ctrl+F12 e sulla chiusura, né il limite di 256 caratteri per il nome dei file. Crediti conservati qui, nel sorgente e nelle fonti, senza slide finale dedicata.
+
+Compilazione tramite `bash scripts/build.sh` con Typst 0.15.1. Controllare formato, numerazione, testi entro pagina e resa visiva.

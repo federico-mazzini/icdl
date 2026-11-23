@@ -9,6 +9,8 @@ from urllib.parse import quote
 def main():
     directory = Path(sys.argv[1])
     titles = {
+        "3 - Testi e stampe.pdf": "3 - Testi e stampe",
+        "2 - Desktop, icone e applicazioni.pdf": "2 - Desktop, icone e applicazioni (dall’ebook)",
         "1_computer_dispositivi.pdf": "1. Computer e dispositivi",
         "2_desktop_icone_impostazioni.pdf": "2. Desktop, icone e impostazioni",
         "4_gestione_file.pdf": "4. Gestione di file",

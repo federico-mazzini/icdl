@@ -1,0 +1,314 @@
+{
+  "fonte": "ICDL Computer Essentials eBook.pdf",
+  "percorso_originale": "/Users/federicomazzini/Downloads/ICDL Computer Essentials eBook.pdf",
+  "sha256": "860c1929e5863d5a875b2ca688947e7e87e897fbc863c79a1e9567f21dbf203d",
+  "autore": "Mario R. Storchi",
+  "copyright": "© 2020 AICA & Edizioni Manna",
+  "capitolo": "3 Testi e stampe",
+  "pagine_stampate": "39–44",
+  "pagine_pdf": "40–45",
+  "estrazione": "Immagini raster originali, senza ridisegno; pagina PDF e indice nel nome. Testi adattati alla proiezione.",
+  "note": [
+    "Ambiente Windows del manuale: Blocco note e WordPad non sono presentati come inventario del software attuale.",
+    "Omesse le scorciatoie Ctrl+F12 e i refusi del testo di origine; apertura e chiusura spiegate tramite menu.",
+    "Il limite di lunghezza del nome file non viene riproposto.",
+    "Crediti nella documentazione e nel sorgente, senza slide finale aggiuntiva.",
+    "Eliminate dalla versione di 23 slide le pagine 6, 7, 8, 17 e 20; numerazione corrente 1–18."
+  ],
+  "slides": [
+    {
+      "slide": 1,
+      "titolo": "Testi e stampe",
+      "pagine_ebook": [],
+      "riferimenti": [],
+      "immagini": [],
+      "slide_prima_selezione": 1
+    },
+    {
+      "slide": 2,
+      "titolo": "Blocco note",
+      "pagine_ebook": [
+        39
+      ],
+      "riferimenti": [
+        "3.1.1"
+      ],
+      "immagini": [
+        "p40-07.png"
+      ],
+      "slide_prima_selezione": 2
+    },
+    {
+      "slide": 3,
+      "titolo": "WordPad",
+      "pagine_ebook": [
+        39
+      ],
+      "riferimenti": [
+        "3.1.1"
+      ],
+      "immagini": [
+        "p40-02.png"
+      ],
+      "slide_prima_selezione": 3
+    },
+    {
+      "slide": 4,
+      "titolo": "Aprire un documento",
+      "pagine_ebook": [
+        39,
+        40
+      ],
+      "riferimenti": [
+        "3.1.1"
+      ],
+      "immagini": [],
+      "slide_prima_selezione": 4
+    },
+    {
+      "slide": 5,
+      "titolo": "Chiudere un documento",
+      "pagine_ebook": [
+        39,
+        40
+      ],
+      "riferimenti": [
+        "3.1.1"
+      ],
+      "immagini": [
+        "p40-06.png"
+      ],
+      "slide_prima_selezione": 5
+    },
+    {
+      "slide": 6,
+      "titolo": "Copiare il testo",
+      "pagine_ebook": [
+        40
+      ],
+      "riferimenti": [
+        "3.1.3"
+      ],
+      "immagini": [],
+      "slide_prima_selezione": 9
+    },
+    {
+      "slide": 7,
+      "titolo": "Spostare il testo",
+      "pagine_ebook": [
+        41
+      ],
+      "riferimenti": [
+        "3.1.3"
+      ],
+      "immagini": [],
+      "slide_prima_selezione": 10
+    },
+    {
+      "slide": 8,
+      "titolo": "Le scorciatoie per il testo",
+      "pagine_ebook": [
+        41
+      ],
+      "riferimenti": [
+        "3.1.3"
+      ],
+      "immagini": [],
+      "slide_prima_selezione": 11
+    },
+    {
+      "slide": 9,
+      "titolo": "Lavorare tra documenti aperti",
+      "pagine_ebook": [
+        41
+      ],
+      "riferimenti": [
+        "3.1.3"
+      ],
+      "immagini": [],
+      "slide_prima_selezione": 12
+    },
+    {
+      "slide": 10,
+      "titolo": "Incollare un’immagine dello schermo",
+      "pagine_ebook": [
+        41
+      ],
+      "riferimenti": [
+        "3.1.3"
+      ],
+      "immagini": [],
+      "slide_prima_selezione": 13
+    },
+    {
+      "slide": 11,
+      "titolo": "Salvare il documento",
+      "pagine_ebook": [
+        41,
+        42
+      ],
+      "riferimenti": [
+        "3.1.4"
+      ],
+      "immagini": [
+        "p42-01.png"
+      ],
+      "slide_prima_selezione": 14
+    },
+    {
+      "slide": 12,
+      "titolo": "I salvataggi successivi",
+      "pagine_ebook": [
+        41,
+        42
+      ],
+      "riferimenti": [
+        "3.1.4"
+      ],
+      "immagini": [],
+      "slide_prima_selezione": 15
+    },
+    {
+      "slide": 13,
+      "titolo": "Installare una stampante",
+      "pagine_ebook": [
+        42
+      ],
+      "riferimenti": [
+        "3.2.1"
+      ],
+      "immagini": [
+        "p43-02.png"
+      ],
+      "slide_prima_selezione": 16
+    },
+    {
+      "slide": 14,
+      "titolo": "La pagina di prova",
+      "pagine_ebook": [
+        43
+      ],
+      "riferimenti": [
+        "3.2.1"
+      ],
+      "immagini": [],
+      "slide_prima_selezione": 18
+    },
+    {
+      "slide": 15,
+      "titolo": "Rimuovere una stampante",
+      "pagine_ebook": [
+        43
+      ],
+      "riferimenti": [
+        "3.2.1"
+      ],
+      "immagini": [],
+      "slide_prima_selezione": 19
+    },
+    {
+      "slide": 16,
+      "titolo": "Stampare un documento",
+      "pagine_ebook": [
+        43
+      ],
+      "riferimenti": [
+        "3.2.3"
+      ],
+      "immagini": [],
+      "slide_prima_selezione": 21
+    },
+    {
+      "slide": 17,
+      "titolo": "La coda di stampa",
+      "pagine_ebook": [
+        43,
+        44
+      ],
+      "riferimenti": [
+        "3.2.4"
+      ],
+      "immagini": [
+        "p44-01.png"
+      ],
+      "slide_prima_selezione": 22
+    },
+    {
+      "slide": 18,
+      "titolo": "Gestire un processo di stampa",
+      "pagine_ebook": [
+        44
+      ],
+      "riferimenti": [
+        "3.2.4"
+      ],
+      "immagini": [],
+      "slide_prima_selezione": 23
+    }
+  ],
+  "slide_eliminate_su_richiesta": [
+    {
+      "slide": 6,
+      "titolo": "Inserire il testo",
+      "pagine_ebook": [
+        40
+      ],
+      "riferimenti": [
+        "3.1.2"
+      ],
+      "immagini": [
+        "p41-02.png"
+      ]
+    },
+    {
+      "slide": 7,
+      "titolo": "Righe e paragrafi",
+      "pagine_ebook": [
+        39,
+        40
+      ],
+      "riferimenti": [
+        "3.1.2"
+      ],
+      "immagini": []
+    },
+    {
+      "slide": 8,
+      "titolo": "Selezionare il testo",
+      "pagine_ebook": [
+        40
+      ],
+      "riferimenti": [
+        "3.1.3"
+      ],
+      "immagini": [
+        "p41-01.png"
+      ]
+    },
+    {
+      "slide": 17,
+      "titolo": "Se la stampante non compare",
+      "pagine_ebook": [
+        42,
+        43
+      ],
+      "riferimenti": [
+        "3.2.1"
+      ],
+      "immagini": [
+        "p43-03.png"
+      ]
+    },
+    {
+      "slide": 20,
+      "titolo": "La stampante predefinita",
+      "pagine_ebook": [
+        43
+      ],
+      "riferimenti": [
+        "3.2.2"
+      ],
+      "immagini": []
+    }
+  ]
+}

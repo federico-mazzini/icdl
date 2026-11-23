@@ -1,0 +1,612 @@
+{
+  "fonte": "ICDL Computer Essentials eBook.pdf",
+  "percorso_originale": "/Users/federicomazzini/Downloads/ICDL Computer Essentials eBook.pdf",
+  "sha256": "860c1929e5863d5a875b2ca688947e7e87e897fbc863c79a1e9567f21dbf203d",
+  "autore": "Mario R. Storchi",
+  "copyright": "© 2020 AICA & Edizioni Manna",
+  "capitolo": "2 Desktop, icone, impostazioni",
+  "pagine_stampate": "23–38",
+  "pagine_pdf": "24–39",
+  "estrazione": "Immagini raster originali estratte senza ridisegno; numero pagina PDF e indice immagine nel nome. Testi rielaborati per proiezione.",
+  "note": [
+    "La richiesta corrente autorizza la copertura completa, distinta dal precedente pacco ridotto.",
+    "Le descrizioni obsolete di Cortana e le limitazioni degli esami sulle scorciatoie non sono riproposte come istruzioni attuali.",
+    "Rinominare un collegamento e impostare la tastiera predefinita sono esplicitati per completare i relativi obiettivi del capitolo.",
+    "Rimosse dalla versione di 44 slide le pagine 8, 9, 10, 12, 14, 17, 18, 22, 25, 33, 35, 36 e 44; numerazione corrente 1–31. I crediti restano nella documentazione e nel sorgente."
+  ],
+  "slides": [
+    {
+      "slide": 1,
+      "titolo": "Desktop, icone e applicazioni",
+      "riferimenti": [],
+      "pagine_ebook": [],
+      "immagini": [],
+      "slide_prima_selezione": 1
+    },
+    {
+      "slide": 2,
+      "titolo": "Il desktop",
+      "riferimenti": [
+        "2.1.1"
+      ],
+      "pagine_ebook": [
+        23
+      ],
+      "immagini": [
+        "p24-02.png"
+      ],
+      "slide_prima_selezione": 2
+    },
+    {
+      "slide": 3,
+      "titolo": "La barra delle applicazioni",
+      "riferimenti": [
+        "2.1.1"
+      ],
+      "pagine_ebook": [
+        23
+      ],
+      "immagini": [],
+      "slide_prima_selezione": 3
+    },
+    {
+      "slide": 4,
+      "titolo": "Visualizzazione attività",
+      "riferimenti": [
+        "2.1.1"
+      ],
+      "pagine_ebook": [
+        24
+      ],
+      "immagini": [
+        "p25-01.png"
+      ],
+      "slide_prima_selezione": 4
+    },
+    {
+      "slide": 5,
+      "titolo": "Il Centro notifiche",
+      "riferimenti": [
+        "2.1.1"
+      ],
+      "pagine_ebook": [
+        24
+      ],
+      "immagini": [
+        "p25-02.png"
+      ],
+      "slide_prima_selezione": 5
+    },
+    {
+      "slide": 6,
+      "titolo": "Le icone",
+      "riferimenti": [
+        "2.1.2"
+      ],
+      "pagine_ebook": [
+        25
+      ],
+      "immagini": [
+        "p26-01.png"
+      ],
+      "slide_prima_selezione": 6
+    },
+    {
+      "slide": 7,
+      "titolo": "Cartelle, unità e cestino",
+      "riferimenti": [
+        "2.1.2"
+      ],
+      "pagine_ebook": [
+        25,
+        26
+      ],
+      "immagini": [],
+      "slide_prima_selezione": 7
+    },
+    {
+      "slide": 8,
+      "titolo": "I collegamenti",
+      "riferimenti": [
+        "2.1.4"
+      ],
+      "pagine_ebook": [
+        26,
+        27
+      ],
+      "immagini": [],
+      "slide_prima_selezione": 11
+    },
+    {
+      "slide": 9,
+      "titolo": "Le parti di una finestra",
+      "riferimenti": [
+        "2.2.1"
+      ],
+      "pagine_ebook": [
+        27
+      ],
+      "immagini": [
+        "p28-02.png"
+      ],
+      "slide_prima_selezione": 13
+    },
+    {
+      "slide": 10,
+      "titolo": "Aprire e chiudere una finestra",
+      "riferimenti": [
+        "2.2.2"
+      ],
+      "pagine_ebook": [
+        28
+      ],
+      "immagini": [],
+      "slide_prima_selezione": 15
+    },
+    {
+      "slide": 11,
+      "titolo": "Spostare e ridimensionare",
+      "riferimenti": [
+        "2.2.2"
+      ],
+      "pagine_ebook": [
+        28,
+        29
+      ],
+      "immagini": [],
+      "slide_prima_selezione": 16
+    },
+    {
+      "slide": 12,
+      "titolo": "Passare da una finestra all’altra",
+      "riferimenti": [
+        "2.2.3"
+      ],
+      "pagine_ebook": [
+        29
+      ],
+      "immagini": [
+        "p25-01.png"
+      ],
+      "slide_prima_selezione": 19
+    },
+    {
+      "slide": 13,
+      "titolo": "Impostazioni di Windows",
+      "riferimenti": [
+        "2.3"
+      ],
+      "pagine_ebook": [
+        30
+      ],
+      "immagini": [
+        "p31-02.png"
+      ],
+      "slide_prima_selezione": 20
+    },
+    {
+      "slide": 14,
+      "titolo": "Cercare un comando o una guida",
+      "riferimenti": [
+        "2.3.1"
+      ],
+      "pagine_ebook": [
+        30,
+        31
+      ],
+      "immagini": [
+        "p32-01.png"
+      ],
+      "slide_prima_selezione": 21
+    },
+    {
+      "slide": 15,
+      "titolo": "Le informazioni del computer",
+      "riferimenti": [
+        "2.3.2"
+      ],
+      "pagine_ebook": [
+        31
+      ],
+      "immagini": [
+        "p32-02.png"
+      ],
+      "slide_prima_selezione": 23
+    },
+    {
+      "slide": 16,
+      "titolo": "Data e ora",
+      "riferimenti": [
+        "2.3.3"
+      ],
+      "pagine_ebook": [
+        32
+      ],
+      "immagini": [
+        "p33-01.png"
+      ],
+      "slide_prima_selezione": 24
+    },
+    {
+      "slide": 17,
+      "titolo": "Il volume audio",
+      "riferimenti": [
+        "2.3.3"
+      ],
+      "pagine_ebook": [
+        32
+      ],
+      "immagini": [
+        "p33-03.png"
+      ],
+      "slide_prima_selezione": 26
+    },
+    {
+      "slide": 18,
+      "titolo": "Le impostazioni dello schermo",
+      "riferimenti": [
+        "2.3.3"
+      ],
+      "pagine_ebook": [
+        33
+      ],
+      "immagini": [
+        "p34-01.png"
+      ],
+      "slide_prima_selezione": 27
+    },
+    {
+      "slide": 19,
+      "titolo": "La risoluzione dello schermo",
+      "riferimenti": [
+        "2.3.3"
+      ],
+      "pagine_ebook": [
+        33
+      ],
+      "immagini": [
+        "p34-02.png"
+      ],
+      "slide_prima_selezione": 28
+    },
+    {
+      "slide": 20,
+      "titolo": "Lo sfondo del desktop",
+      "riferimenti": [
+        "2.3.3"
+      ],
+      "pagine_ebook": [
+        34
+      ],
+      "immagini": [
+        "p35-02.png"
+      ],
+      "slide_prima_selezione": 29
+    },
+    {
+      "slide": 21,
+      "titolo": "Aggiungere una lingua",
+      "riferimenti": [
+        "2.3.4"
+      ],
+      "pagine_ebook": [
+        34
+      ],
+      "immagini": [
+        "p35-03.png"
+      ],
+      "slide_prima_selezione": 30
+    },
+    {
+      "slide": 22,
+      "titolo": "Installare una lingua",
+      "riferimenti": [
+        "2.3.4"
+      ],
+      "pagine_ebook": [
+        34
+      ],
+      "immagini": [
+        "p35-01.png"
+      ],
+      "slide_prima_selezione": 31
+    },
+    {
+      "slide": 23,
+      "titolo": "Scegliere o rimuovere una lingua",
+      "riferimenti": [
+        "2.3.4"
+      ],
+      "pagine_ebook": [
+        35
+      ],
+      "immagini": [
+        "p36-03.png"
+      ],
+      "slide_prima_selezione": 32
+    },
+    {
+      "slide": 24,
+      "titolo": "Un’applicazione non risponde",
+      "riferimenti": [
+        "2.3.5"
+      ],
+      "pagine_ebook": [
+        35
+      ],
+      "immagini": [
+        "p36-02.png"
+      ],
+      "slide_prima_selezione": 34
+    },
+    {
+      "slide": 25,
+      "titolo": "Installare da un file scaricato",
+      "riferimenti": [
+        "2.3.6"
+      ],
+      "pagine_ebook": [
+        36
+      ],
+      "immagini": [
+        "p37-01.png"
+      ],
+      "slide_prima_selezione": 37
+    },
+    {
+      "slide": 26,
+      "titolo": "La conferma di installazione",
+      "riferimenti": [
+        "2.3.6"
+      ],
+      "pagine_ebook": [
+        37
+      ],
+      "immagini": [
+        "p38-01.png"
+      ],
+      "slide_prima_selezione": 38
+    },
+    {
+      "slide": 27,
+      "titolo": "Disinstallare un’applicazione",
+      "riferimenti": [
+        "2.3.6"
+      ],
+      "pagine_ebook": [
+        37
+      ],
+      "immagini": [
+        "p38-02.png"
+      ],
+      "slide_prima_selezione": 39
+    },
+    {
+      "slide": 28,
+      "titolo": "Collegare un dispositivo USB",
+      "riferimenti": [
+        "2.3.7"
+      ],
+      "pagine_ebook": [
+        37,
+        38
+      ],
+      "immagini": [],
+      "slide_prima_selezione": 40
+    },
+    {
+      "slide": 29,
+      "titolo": "Scollegare un dispositivo",
+      "riferimenti": [
+        "2.3.7"
+      ],
+      "pagine_ebook": [
+        38
+      ],
+      "immagini": [],
+      "slide_prima_selezione": 41
+    },
+    {
+      "slide": 30,
+      "titolo": "Catturare lo schermo",
+      "riferimenti": [
+        "2.3.8"
+      ],
+      "pagine_ebook": [
+        38
+      ],
+      "immagini": [],
+      "slide_prima_selezione": 42
+    },
+    {
+      "slide": 31,
+      "titolo": "Cattura e annota",
+      "riferimenti": [
+        "2.3.8"
+      ],
+      "pagine_ebook": [
+        38
+      ],
+      "immagini": [
+        "p39-01.png"
+      ],
+      "slide_prima_selezione": 43
+    }
+  ],
+  "slide_eliminate_su_richiesta": [
+    {
+      "slide": 8,
+      "titolo": "Dischi fissi e SSD",
+      "riferimenti": [
+        "2.1.2"
+      ],
+      "pagine_ebook": [
+        25,
+        26
+      ],
+      "immagini": []
+    },
+    {
+      "slide": 9,
+      "titolo": "Selezionare e spostare le icone",
+      "riferimenti": [
+        "2.1.3"
+      ],
+      "pagine_ebook": [
+        26
+      ],
+      "immagini": []
+    },
+    {
+      "slide": 10,
+      "titolo": "Ordinare le icone",
+      "riferimenti": [
+        "2.1.3"
+      ],
+      "pagine_ebook": [
+        26
+      ],
+      "immagini": [
+        "p27-01.png"
+      ]
+    },
+    {
+      "slide": 12,
+      "titolo": "Gestire un collegamento",
+      "riferimenti": [
+        "2.1.4"
+      ],
+      "pagine_ebook": [
+        26,
+        27
+      ],
+      "immagini": []
+    },
+    {
+      "slide": 14,
+      "titolo": "Barra multifunzione e scorrimento",
+      "riferimenti": [
+        "2.2.1"
+      ],
+      "pagine_ebook": [
+        27,
+        28
+      ],
+      "immagini": [
+        "p28-03.png"
+      ]
+    },
+    {
+      "slide": 17,
+      "titolo": "Disporre più finestre",
+      "riferimenti": [
+        "2.2.2"
+      ],
+      "pagine_ebook": [
+        28
+      ],
+      "immagini": [
+        "p29-01.png"
+      ]
+    },
+    {
+      "slide": 18,
+      "titolo": "Espandere le cartelle",
+      "riferimenti": [
+        "2.2.2"
+      ],
+      "pagine_ebook": [
+        29
+      ],
+      "immagini": [
+        "p30-07.png"
+      ]
+    },
+    {
+      "slide": 22,
+      "titolo": "Attivare e disattivare una funzione",
+      "riferimenti": [
+        "2.3"
+      ],
+      "pagine_ebook": [
+        30
+      ],
+      "immagini": [
+        "p31-03.png"
+      ]
+    },
+    {
+      "slide": 25,
+      "titolo": "Modificare data e ora",
+      "riferimenti": [
+        "2.3.3"
+      ],
+      "pagine_ebook": [
+        32
+      ],
+      "immagini": [
+        "p33-02.png"
+      ]
+    },
+    {
+      "slide": 33,
+      "titolo": "Rimuovere una lingua",
+      "riferimenti": [
+        "2.3.4"
+      ],
+      "pagine_ebook": [
+        35
+      ],
+      "immagini": [
+        "p36-01.png"
+      ]
+    },
+    {
+      "slide": 35,
+      "titolo": "Installare un’applicazione",
+      "riferimenti": [
+        "2.3.6"
+      ],
+      "pagine_ebook": [
+        35,
+        36
+      ],
+      "immagini": []
+    },
+    {
+      "slide": 36,
+      "titolo": "Le opzioni di installazione",
+      "riferimenti": [
+        "2.3.6"
+      ],
+      "pagine_ebook": [
+        36
+      ],
+      "immagini": []
+    },
+    {
+      "slide": 44,
+      "titolo": "Fonte dei contenuti e delle immagini",
+      "riferimenti": [],
+      "pagine_ebook": [
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "immagini": []
+    }
+  ]
+}
