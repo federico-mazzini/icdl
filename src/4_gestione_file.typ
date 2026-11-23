@@ -1,6 +1,8 @@
 // Sezione 4 del syllabus Computer Essentials.
 // Testi e schemi ripresi dalle dispense del docente in intrormatica.
 // Provenienza e copertura: assets/gestione-file/fonti.json e AGENTS.md.
+// Integrazioni: Mario R. Storchi, ICDL Computer Essentials eBook, cap. 4, pp. 45–58.
+// Immagini aggiunte: © 2020 AICA & Edizioni Manna; assets/ebook-capitolo-4/fonti.json.
 // Compilazione: typst compile --root . src/4_gestione_file.typ dist/4_gestione_file.pdf
 
 #let rosso = rgb("#c00000")
@@ -109,6 +111,29 @@
     image(percorso, width: 832pt, height: if nota == none { 340pt } else { 285pt }, fit: "contain"))
   #if nota != none { blocco(64, 457, 832, nota, corpo: 23) }
 ]
+// Impaginazione del capitolo completo: misura i testi prima di posizionarli.
+#let testo-misurato(w, h, body, corpo: 25) = context {
+  for taille in (corpo, corpo - 1, corpo - 2, corpo - 3) {
+  let b = block(width: w * 1pt, breakable: false)[
+    #set text(size: taille * 1pt, top-edge: "cap-height", bottom-edge: "descender")
+    #set par(leading: 0.30em, spacing: 0.65em)
+    #set list(indent: 5pt, body-indent: 12pt, spacing: 0.45em)
+    #set enum(indent: 5pt, body-indent: 12pt, spacing: 0.45em)
+    #body
+  ]
+  if measure(b, width: w * 1pt).height <= h * 1pt { return b }
+  }
+  panic("Testo fuori dall’area della slide: " + repr(body))
+}
+#let figura(nome, w, h) = image("../assets/ebook-capitolo-4/" + nome, width: w * 1pt, height: h * 1pt, fit: "contain")
+#let illustrazione(a, b, testo, nome, corpo: 25) = slide(titolo: a)[
+  #titolo(a, b)
+  #place(top + left, dx: 64pt, dy: 163pt, testo-misurato(345, 333, testo, corpo: corpo))
+  #place(top + left, dx: 435pt, dy: 153pt, figura(nome, 465, 345))
+  #riga(29.8, 528.275, 9.68)[Polo Tecnico Professionale di Lugo]
+  #riga(831.386, 528.275, 9.68)[Prof. Federico Mazzini]
+]
+
 #show: presentazione
 
 #apertura("Gestione di file", "File, cartelle e supporti di memoria")
@@ -148,6 +173,15 @@ Il formato aiuta noi a capire di cosa si tratta e il computer a individuare un p
 )
 ]
 
+// Integrazione ebook: pagine 48; syllabus: 4.1.4
+#illustrazione("Icone e anteprime", "Riconoscere i file a colpo d’occhio", [
+L’*icona* aiuta a riconoscere il tipo di file e può dipendere dall’applicazione associata.
+
+A volte compare un’*anteprima*: la miniatura di una foto, la copertina di un brano o la prima pagina di un PDF.
+
+L’aspetto aiuta a orientarsi; l’*estensione* rimane utile per conoscere il formato.
+], "p49-02.png")
+
 // Syllabus: 4.1.1, 4.1.6; dispensa File e cartelle, testi ed esempio ripresi
 #lezione("Cartelle e sottocartelle", "Organizzare i materiali")[
 Una *cartella*, chiamata anche _directory_, è un contenitore che permette di raggruppare file e mantenerli ordinati. Usare cartelle con nomi chiari aiuta a trovare più facilmente ciò che serve.
@@ -176,6 +210,24 @@ Il simbolo `\` separa i diversi elementi del percorso.
 // Syllabus: 4.1.1, 4.1.3
 #schema("Esplora file", "Il programma con cui ci muoviamo tra i materiali", "../assets/gestione-file/esplora-file.jpg", nota: [Aprire *Esplora file* con *Windows + E*. A sinistra troviamo le posizioni; in alto il percorso e la ricerca; al centro i file della cartella.])
 
+// Integrazione ebook: pagine 45, 46, 48; syllabus: 4.1.1, 4.1.5
+#illustrazione("Aprire unità, cartelle e file", "Muoversi nella struttura gerarchica", [
+Fare *doppio clic* su un’unità o su una cartella per vederne il contenuto. Su un file si avvia l’applicazione associata.
+
+In alternativa: *tasto destro → Apri*.
+
+Nel riquadro a sinistra, le frecce accanto alle cartelle mostrano o nascondono le sottocartelle.
+], "p46-05.png")
+
+// Integrazione ebook: pagine 46, 47; syllabus: 4.1.3
+#illustrazione("Come visualizzare i file", "Icone, elenco e dettagli", [
+In *Esplora file → Visualizza* scegliamo come mostrare il contenuto della cartella.
+
+Le *icone grandi* rendono più visibili le anteprime; *Elenco* mostra molti elementi; *Dettagli* aggiunge informazioni come tipo, dimensione e data.
+
+Le stesse scelte si trovano con *tasto destro in uno spazio vuoto → Visualizza*.
+], "p48-02.png")
+
 // Syllabus: 4.1.2; spiegazione con screenshot di Windows 10
 #slide(titolo: "Le proprietà")[
   #titolo("Le proprietà", "Nome, dimensioni e posizione")
@@ -191,6 +243,24 @@ Il simbolo `\` separa i diversi elementi del percorso.
   #place(top + left, dx: 600pt, dy: 145pt, image("../assets/gestione-file/proprieta.jpg", width: 290pt))
 ]
 
+// Integrazione ebook: pagine 49; syllabus: 4.1.6
+#lezione("Scegliere nomi significativi", "Capire il contenuto senza aprire il file")[
+Un nome utile descrive il contenuto ed evita di essere troppo generico o troppo lungo.
+
+Nell’esempio dell’ebook, *Lettera disdetta assicurazione* è più chiaro di *Lettera*.
+
+Per i materiali scolastici possiamo usare *Relazione di storia.docx* oppure *Appunti informatica*: il nome deve aiutarci a ritrovare ciò che cerchiamo.
+]
+
+// Integrazione ebook: pagine 49; syllabus: 4.1.7
+#lezione("Creare una cartella", "Preparare il posto per i materiali")[
+Aprire la posizione in cui vogliamo creare la cartella.
+
+Fare *tasto destro in un punto vuoto → Nuovo → Cartella*, oppure *Home → Nuova cartella*.
+
+Digitare il nome e premere *Invio*. Aprendo la cartella e ripetendo l’operazione possiamo creare una sottocartella.
+]
+
 // Syllabus: 4.1.8; nuova spiegazione nello stile del docente
 #lezione("Rinominare", "Cambiare il nome, non il contenuto")[
 *Rinominare* significa cambiare il nome di un file o di una cartella. Il contenuto rimane lo stesso.
@@ -201,6 +271,44 @@ Per un file, mantenere l’*estensione corretta*.
 
 Per esempio, posso rinominare *Documento1.docx* in *Relazione di storia.docx*: cambia il nome che descrive il contenuto, non il formato.
 ]
+
+// Integrazione ebook: pagine 49, 50; syllabus: 4.1.9
+#illustrazione("Cercare un file", "Quando non ricordiamo dove si trova", [
+Digitare il nome completo o una sua parte nella *casella di ricerca* accanto a Start.
+
+Fra i risultati, scegliere il file desiderato. Le categorie, come *Documenti*, aiutano a restringere la ricerca.
+
+Un nome significativo rende più semplice distinguere il documento giusto dagli altri risultati.
+], "p51-01.png")
+
+// Integrazione ebook: pagine 50, 51; syllabus: 4.1.9
+#illustrazione("La ricerca in Esplora file", "Scegliere dove cercare e filtrare i risultati", [
+Aprire la cartella o l’unità da cui partire e usare il *riquadro di ricerca* in alto a destra.
+
+Nella scheda *Cerca* del manuale troviamo filtri per tipo, dimensione e data di modifica.
+
+La ricerca nel contenuto dipende dalle impostazioni e dal tipo di file.
+], "p51-02.png")
+
+// Integrazione ebook: pagine 51; syllabus: 4.1.9
+#lezione("I caratteri jolly", "Cercare nomi che ricordiamo solo in parte")[
+Nel riquadro di ricerca di Esplora file possiamo usare caratteri che sostituiscono parti del nome.
+
+- `?` sostituisce un carattere: `vacanz?` può trovare “vacanza” e “vacanze”.
+- `*` sostituisce una sequenza di caratteri: `*.jpg` cerca i file con estensione JPG.
+- `vacanza.*` cerca il nome “vacanza” con estensioni diverse.
+
+I risultati dipendono dalla cartella o dall’unità in cui stiamo cercando.
+]
+
+// Integrazione ebook: pagine 51; syllabus: 4.1.10
+#illustrazione("Ritrovare i file recenti", "I documenti usati con un’applicazione", [
+Fare clic con il *tasto destro sull’icona di un programma* nella barra delle applicazioni.
+
+L’elenco può mostrare documenti usati di recente o di frequente.
+
+Cliccando su un documento lo apriamo direttamente. Nell’immagine dell’ebook è mostrato l’elenco di Word.
+], "p52-02.png")
 
 // Syllabus: 4.2.1; nuova spiegazione nello stile del docente
 #lezione("Selezionare file e cartelle", "Uno, alcuni oppure tutti")[

@@ -1,0 +1,145 @@
+{
+  "fonte": "ICDL Computer Essentials eBook.pdf",
+  "percorso_originale": "/Users/federicomazzini/Downloads/ICDL Computer Essentials eBook.pdf",
+  "sha256": "860c1929e5863d5a875b2ca688947e7e87e897fbc863c79a1e9567f21dbf203d",
+  "autore": "Mario R. Storchi",
+  "copyright": "© 2020 AICA & Edizioni Manna",
+  "capitolo": "4 Gestione di file",
+  "pagine_stampate": "45–58",
+  "pagine_pdf": "46–59",
+  "estrazione": "Immagini raster originali senza ridisegno; pagina PDF e indice immagine nel nome.",
+  "criterio_editoriale": "Integrazioni ai contenuti mancanti, dopo la teoria del docente. Le 23 slide originali restano inalterate; nessuna duplicazione delle procedure già trattate.",
+  "note": [
+    "Non riproposti dati tecnici obsoleti, limiti scorretti sui nomi file, condivisione della password o garanzie assolute sulla compressione e sul cestino.",
+    "Non aggiunti gli approfondimenti e laboratori già esclusi dal docente.",
+    "La ricerca nel contenuto è descritta con i limiti già documentati nelle istruzioni del progetto."
+  ],
+  "slide_aggiunte": [
+    {
+      "titolo": "Icone e anteprime — Riconoscere i file a colpo d’occhio",
+      "riferimenti": [
+        "4.1.4"
+      ],
+      "origine": "ebook, capitolo 4",
+      "pagine_ebook": [
+        48
+      ],
+      "immagini": [
+        "p49-02.png"
+      ],
+      "slide": 5
+    },
+    {
+      "titolo": "Aprire unità, cartelle e file — Muoversi nella struttura gerarchica",
+      "riferimenti": [
+        "4.1.1",
+        "4.1.5"
+      ],
+      "origine": "ebook, capitolo 4",
+      "pagine_ebook": [
+        45,
+        46,
+        48
+      ],
+      "immagini": [
+        "p46-05.png"
+      ],
+      "slide": 10
+    },
+    {
+      "titolo": "Come visualizzare i file — Icone, elenco e dettagli",
+      "riferimenti": [
+        "4.1.3"
+      ],
+      "origine": "ebook, capitolo 4",
+      "pagine_ebook": [
+        46,
+        47
+      ],
+      "immagini": [
+        "p48-02.png"
+      ],
+      "slide": 11
+    },
+    {
+      "titolo": "Scegliere nomi significativi — Capire il contenuto senza aprire il file",
+      "riferimenti": [
+        "4.1.6"
+      ],
+      "origine": "ebook, capitolo 4",
+      "pagine_ebook": [
+        49
+      ],
+      "immagini": [],
+      "slide": 13
+    },
+    {
+      "titolo": "Creare una cartella — Preparare il posto per i materiali",
+      "riferimenti": [
+        "4.1.7"
+      ],
+      "origine": "ebook, capitolo 4",
+      "pagine_ebook": [
+        49
+      ],
+      "immagini": [],
+      "slide": 14
+    },
+    {
+      "titolo": "Cercare un file — Quando non ricordiamo dove si trova",
+      "riferimenti": [
+        "4.1.9"
+      ],
+      "origine": "ebook, capitolo 4",
+      "pagine_ebook": [
+        49,
+        50
+      ],
+      "immagini": [
+        "p51-01.png"
+      ],
+      "slide": 16
+    },
+    {
+      "titolo": "La ricerca in Esplora file — Scegliere dove cercare e filtrare i risultati",
+      "riferimenti": [
+        "4.1.9"
+      ],
+      "origine": "ebook, capitolo 4",
+      "pagine_ebook": [
+        50,
+        51
+      ],
+      "immagini": [
+        "p51-02.png"
+      ],
+      "slide": 17
+    },
+    {
+      "titolo": "I caratteri jolly — Cercare nomi che ricordiamo solo in parte",
+      "riferimenti": [
+        "4.1.9"
+      ],
+      "origine": "ebook, capitolo 4",
+      "pagine_ebook": [
+        51
+      ],
+      "immagini": [],
+      "slide": 18
+    },
+    {
+      "titolo": "Ritrovare i file recenti — I documenti usati con un’applicazione",
+      "riferimenti": [
+        "4.1.10"
+      ],
+      "origine": "ebook, capitolo 4",
+      "pagine_ebook": [
+        51
+      ],
+      "immagini": [
+        "p52-02.png"
+      ],
+      "slide": 19
+    }
+  ]
+}

@@ -26,7 +26,7 @@ Sono disponibili sei presentazioni, ciascuna con un unico sorgente Typst:
 | 2. Desktop, icone e impostazioni | `src/2_desktop_icone_impostazioni.typ` | `dist/2_desktop_icone_impostazioni.pdf` | 8 slide, selezione concordata dei punti della sezione 2 |
 | 2 - Desktop, icone e applicazioni | `src/2 - Desktop, icone e applicazioni.typ` | `dist/2 - Desktop, icone e applicazioni.pdf` | 31 slide, selezione dall’ebook |
 | 3 - Testi e stampe | `src/3 - Testi e stampe.typ` | `dist/3 - Testi e stampe.pdf` | 18 slide, selezione del capitolo 3 dell’ebook |
-| 4. Gestione di file | `src/4_gestione_file.typ` | `dist/4_gestione_file.pdf` | 23 slide, selezione ridotta concordata della sezione 4 |
+| 4. Gestione di file | `src/4_gestione_file.typ` | `dist/4_gestione_file.pdf` | 32 slide: 23 del docente e 9 integrazioni dall’ebook |
 
 La presentazione iniziale, prima chiamata `presentazione`, è stata rinominata **originali mie**. Il PDF è stato rinominato senza modificarne il contenuto. Raccoglie i tre materiali originali in questo ordine:
 
@@ -136,7 +136,7 @@ Riprendi il testo e lo stile delle dispense del docente in [intrormatica](https:
 
 Gli schemi originali e gli screenshot esterni di Windows 10 sono in `assets/gestione-file/`. La provenienza di ogni slide e la mappatura puntuale al syllabus sono in `assets/gestione-file/fonti.json`. I PDF delle sezioni 1 e 2 restano separati. Mantieni copertina, stile Typst comune, paragrafi brevi e tabelle modificabili. Su richiesta del docente, non includere i laboratori finali né gli approfondimenti su conversione dei formati, indicizzazione, conflitti tra file omonimi, eliminazione fuori dal cestino, limiti degli allegati email o aggiornamento degli ZIP. Conserva le basi su file, nomi ed estensioni necessarie al syllabus.
 
-Selezione aggiornata su indicazione del docente: eliminate le precedenti slide 9, 11, 12, 14, 15, 16 e 19; unite 21–22; screenshot aggiunti alle precedenti 10 e 18; rimosso Blu-ray. La copertura del syllabus è ora parziale. Non reinserire i contenuti esclusi senza richiesta. Numerazione corrente:
+Selezione aggiornata su indicazione del docente: eliminate le precedenti slide 9, 11, 12, 14, 15, 16 e 19; unite 21–22; screenshot aggiunti alle precedenti 10 e 18; rimosso Blu-ray. La prima selezione aveva copertura parziale. La successiva richiesta del docente autorizza l’aggiunta dei contenuti mancanti dall’ebook, conservando tutte queste 23 slide. Restano esclusi gli approfondimenti indicati sopra. Numerazione precedente all’integrazione:
 
 | Slide | Argomento | Riferimenti |
 | --- | --- | --- |
@@ -227,3 +227,50 @@ Nuova presentazione richiesta dal docente, separata dalle altre: `src/3 - Testi 
 Fonte: Mario R. Storchi, `ICDL Computer Essentials eBook.pdf`, capitolo 3, pp. 39–44 (pagine PDF 40–45), © 2020 AICA & Edizioni Manna. Le nove immagini estratte, senza ridisegno, sono in `assets/ebook-capitolo-3/`; `fonti.json` conserva hash e mappatura per slide. Schermate e programmi sono quelli dell’ambiente del manuale. Non riproporre come istruzioni corrette i refusi sulle scorciatoie Ctrl+F12 e sulla chiusura, né il limite di 256 caratteri per il nome dei file. Crediti conservati qui, nel sorgente e nelle fonti, senza slide finale dedicata.
 
 Compilazione tramite `bash scripts/build.sh` con Typst 0.15.1. Controllare formato, numerazione, testi entro pagina e resa visiva.
+
+## 4. Gestione di file: integrazione del capitolo 4
+
+Su richiesta esplicita del docente, estendere la presentazione esistente senza sostituirla: mantenere integralmente tutte le 23 slide, incluse teoria, esempi e schemi, nello stesso ordine relativo. Le aggiunte vanno dopo le spiegazioni del docente nei punti affini. Sorgente e PDF restano `src/4_gestione_file.typ` e `dist/4_gestione_file.pdf`, con link pubblico stabile.
+
+La versione integrata contiene 32 slide: 23 originali e 9 nuove, con 6 immagini estratte dall’ebook. Le integrazioni sono icone e anteprime, apertura e navigazione, visualizzazioni, nomi significativi, creazione cartelle, ricerca da Start, ricerca e filtri in Esplora file, caratteri jolly e file recenti. Non duplicare proprietà, selezione, ordinamento, copia e spostamento, cestino, supporti, unità di misura, spazio o ZIP, già trattati. Non aggiungere laboratori o gli approfondimenti esclusi: conversione formati, indicizzazione, omonimi, cancellazione fuori dal cestino, limiti allegati, aggiornamento ZIP e Blu-ray.
+
+Fonte aggiunta: Mario R. Storchi, `ICDL Computer Essentials eBook.pdf`, capitolo 4, pp. 45–58 (pagine PDF 46–59), © 2020 AICA & Edizioni Manna. Crediti, hash e mappatura delle nuove immagini in `assets/ebook-capitolo-4/fonti.json`; mappatura complessiva corrente e numerazione precedente in `assets/gestione-file/fonti.json`. Evitare le inesattezze del manuale su nomi, password condivise, compressione e cestino. La ricerca nel contenuto dipende da impostazioni e formato.
+
+Numerazione corrente:
+
+| Slide | Argomento | Provenienza |
+| --- | --- | --- |
+| 1 | Gestione di file | Docente, precedente 1 |
+| 2 | Che cos’è un file? — Un contenitore digitale | Docente, precedente 2 |
+| 3 | Nome ed estensione — Come riconosciamo un file | Docente, precedente 3 |
+| 4 | I tipi di file — Le estensioni più comuni | Docente, precedente 4 |
+| 5 | Icone e anteprime — Riconoscere i file a colpo d’occhio | Integrazione ebook |
+| 6 | Cartelle e sottocartelle — Organizzare i materiali | Docente, precedente 5 |
+| 7 | L’albero delle cartelle — Un esempio con i materiali della classe | Docente, precedente 6 |
+| 8 | Il percorso di un file — Un indirizzo per ritrovarlo | Docente, precedente 7 |
+| 9 | Esplora file — Il programma con cui ci muoviamo tra i materiali | Docente, precedente 8 |
+| 10 | Aprire unità, cartelle e file — Muoversi nella struttura gerarchica | Integrazione ebook |
+| 11 | Come visualizzare i file — Icone, elenco e dettagli | Integrazione ebook |
+| 12 | Le proprietà — Nome, dimensioni e posizione | Docente, precedente 9 |
+| 13 | Scegliere nomi significativi — Capire il contenuto senza aprire il file | Integrazione ebook |
+| 14 | Creare una cartella — Preparare il posto per i materiali | Integrazione ebook |
+| 15 | Rinominare — Cambiare il nome, non il contenuto | Docente, precedente 10 |
+| 16 | Cercare un file — Quando non ricordiamo dove si trova | Integrazione ebook |
+| 17 | La ricerca in Esplora file — Scegliere dove cercare e filtrare i risultati | Integrazione ebook |
+| 18 | I caratteri jolly — Cercare nomi che ricordiamo solo in parte | Integrazione ebook |
+| 19 | Ritrovare i file recenti — I documenti usati con un’applicazione | Integrazione ebook |
+| 20 | Selezionare file e cartelle — Uno, alcuni oppure tutti | Docente, precedente 11 |
+| 21 | Ordinare i materiali — Nome, dimensione, tipo e data | Docente, precedente 12 |
+| 22 | Copiare e spostare in Windows — Selezionare, scegliere il comando, indicare dove | Docente, precedente 13 |
+| 23 | Il cestino — Eliminare, ripristinare e svuotare | Docente, precedente 14 |
+| 24 | Dove conserviamo i file? — Supporti e unità di archiviazione | Docente, precedente 15 |
+| 25 | Le unità di misura — Byte, KB, MB, GB e TB | Docente, precedente 16 |
+| 26 | Lo spazio di archiviazione — Capacità totale, spazio occupato e disponibile | Docente, precedente 17 |
+| 27 | Quanto spazio è rimasto? — Questo PC e le proprietà dell’unità | Docente, precedente 18 |
+| 28 | I file ZIP — Più materiali in un unico file | Docente, precedente 19 |
+| 29 | Creare uno ZIP — Dalla cartella a un unico file | Docente, precedente 20 |
+| 30 | Comprimere in Windows 10 — Creare una cartella compressa | Docente, precedente 21 |
+| 31 | Estrarre uno ZIP — Ritrovare i file e le cartelle | Docente, precedente 22 |
+| 32 | Estrarre in Windows 10 — Scegliere la cartella di destinazione | Docente, precedente 23 |
+
+Compilazione con `bash scripts/build.sh` e Typst 0.15.1; confronto delle 23 pagine precedenti con quelle mantenute (aggiornato solo il contatore) e controllo visivo delle pagine nuove.
