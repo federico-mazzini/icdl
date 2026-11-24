@@ -1,7 +1,8 @@
 // Fonte: Mario R. Storchi, ICDL Computer Essentials eBook, cap. 2, pp. 23–38.
-// Immagini: © 2020 AICA & Edizioni Manna. Crediti completi in assets/ebook-capitolo-2/fonti.json.
-// Selezione del capitolo 2 dell’ebook; distinta dalla selezione breve precedente.
-// Fonte e mappatura: ../assets/ebook-capitolo-2/fonti.json
+// Immagini ebook: © 2020 AICA & Edizioni Manna.
+// Presentazione unificata: priorità ai testi e alle immagini della selezione del docente.
+// Fonti e mappatura: assets/ebook-capitolo-2/fonti.json e assets/windows10/fonti.json.
+// Il precedente URL 2_desktop_icone_impostazioni.pdf è un alias di questo PDF.
 #let rosso = rgb("#c00000")
 #let grigio = rgb("#555555")
 #let larghezza = 864pt
@@ -144,14 +145,26 @@ Come su una scrivania, troviamo gli oggetti che usiamo più spesso: *icone* di d
 Nella parte inferiore si trova la *barra delle applicazioni*.
 ], "p24-02.png", corpo: 25)
 
-// Ebook: pagine 23; syllabus: 2.1.1
-#lezione("La barra delle applicazioni", "Avviare e ritrovare il lavoro aperto")[
-La barra delle applicazioni permette di:
-
-1. Aprire il menu *Start* e accedere ai programmi e ai comandi del sistema.
-2. Avviare rapidamente le applicazioni presenti sulla barra.
-3. Passare tra le applicazioni aperte.
-4. Leggere l’ora e controllare le icone dell’*area di notifica*, come volume e rete.
+// Docente: precedente slide 2; syllabus: 2.1.1, 2.1.2.
+#slide(titolo: "Desktop e barra delle applicazioni")[
+  #titolo("Desktop e barra delle applicazioni", "Windows 10")
+  #blocco(64, 142, 832)[Il *desktop* è lo spazio di lavoro del sistema operativo. La *barra delle applicazioni* permette di avviare programmi, ritrovare quelli aperti e leggere informazioni sul sistema.]
+  // Ritaglio nativo della sola barra: il file originale Microsoft rimane intatto.
+  #place(top + left, dx: 48pt, dy: 258pt, image("../assets/windows10/barra-ritaglio.svg", width: 864pt))
+  #freccia(90, 345, 64, 279)
+  #blocco(48, 355, 120, corpo: 20)[*Start*\ Applicazioni e comandi del sistema.]
+  #freccia(215, 345, 210, 279)
+  #blocco(180, 355, 130, corpo: 20)[*Ricerca*\ Cercare app, file e impostazioni.]
+  #freccia(350, 345, 357, 279)
+  #blocco(320, 355, 130, corpo: 20)[*Attività*\ Panoramica del lavoro aperto.]
+  #freccia(485, 345, 424, 279)
+  #freccia(510, 345, 459, 279)
+  #freccia(535, 345, 495, 279)
+  #blocco(465, 355, 160, corpo: 20)[*Applicazioni*\ Edge, Esplora file e Microsoft Store.]
+  #freccia(705, 345, 777, 279)
+  #blocco(650, 355, 140, corpo: 20)[*Area di notifica*\ Rete, volume e altre icone di sistema.]
+  #freccia(860, 345, 845, 279)
+  #blocco(805, 355, 105, corpo: 20)[*Data e ora*\ Orologio del computer.]
 ]
 
 // Ebook: pagine 24; syllabus: 2.1.1
@@ -207,14 +220,17 @@ I *menu* raccolgono i comandi; la *barra degli strumenti* offre pulsanti per ric
 La *barra di stato*, in basso, mostra informazioni sul contenuto o sull’operazione in corso.
 ], "p28-02.png", corpo: 25)
 
-// Ebook: pagine 28; syllabus: 2.2.2
-#lezione("Aprire e chiudere una finestra", "I pulsanti sulla barra del titolo")[
-Aprendo un’applicazione, un file o una cartella compare una *finestra*.
+// Docente: precedente slide 3; dettagli sui pulsanti dall’ebook, p. 28; syllabus: 2.2.2.
+#slide(titolo: "Applicazioni e finestre")[
+  #titolo("Applicazioni e finestre", "Più programmi contemporaneamente")
+  #place(top + left, dx: 64pt, dy: 160pt, testo-misurato(335, 338, [
+    Il sistema operativo gestisce *più applicazioni alla volta*, come Esplora file e Impostazioni nello screenshot.
 
-- *Riduci a icona* (linea): nasconde la finestra e lascia l’applicazione aperta sulla barra.
-- *Massimizza* (quadrato): porta la finestra a tutto schermo.
-- *Ripristina* (due quadrati): torna alle dimensioni precedenti.
-- *Chiudi* (X): chiude la finestra. Può essere richiesto di salvare il lavoro.
+    *Riduci a icona* (linea) lascia l’applicazione aperta sulla barra. *Massimizza* (quadrato) porta la finestra a tutto schermo; *Ripristina* (due quadrati) torna alle dimensioni precedenti.
+
+    *Chiudi* (X) chiude la finestra e può richiedere di *salvare il lavoro*.
+  ], corpo: 23))
+  #place(top + left, dx: 425pt, dy: 180pt, image("../assets/windows10/finestre-affiancate.jpg", width: 485pt))
 ]
 
 // Ebook: pagine 28, 29; syllabus: 2.2.2
@@ -255,14 +271,18 @@ Windows propone applicazioni, impostazioni, file e risultati di ricerca.
 Selezionare il risultato adatto per aprirlo o leggere le informazioni. Nell’esempio cerchiamo *luminosità*.
 ], "p32-01.png", corpo: 25)
 
-// Ebook: pagine 31; syllabus: 2.3.2
-#illustrazione("Le informazioni del computer", "Sistema operativo, processore e RAM", [
-Aprire *Start → Impostazioni → Sistema → Informazioni sul sistema*.
+// Docente: precedente slide 4; processore dall’ebook, p. 31; syllabus: 2.3.2.
+#slide(titolo: "Le informazioni del computer")[
+  #titolo("Le informazioni del computer", "Sistema operativo, processore e RAM")
+  #blocco(64, 160, 295, corpo: 23)[
+    Possiamo consultare il *nome e la versione di Windows*, il tipo di processore e la quantità di *RAM installata*.
 
-Qui leggiamo nome e versione di Windows, tipo di processore e *RAM installata*.
+    Queste informazioni aiutano a conoscere il computer e a verificare la compatibilità delle applicazioni.
 
-Questi dati aiutano a verificare la compatibilità di nuove applicazioni o periferiche.
-], "p32-02.png", corpo: 25)
+    In Windows 10: *Impostazioni → Sistema → Informazioni su* (o *Informazioni sul sistema*).
+  ]
+  #place(top + left, dx: 395pt, dy: 170pt, image("../assets/windows10/informazioni-sistema.jpg", width: 515pt))
+]
 
 // Ebook: pagine 32; syllabus: 2.3.3
 #illustrazione("Data e ora", "Regolazione automatica o manuale", [
@@ -324,14 +344,29 @@ La sigla vicino all’orologio, come *ITA* o *FRA*, permette di scegliere la lin
 Cliccare sulla sigla e selezionare la lingua desiderata. Nelle opzioni avanzate della tastiera si può impostare il metodo di input predefinito.
 ], "p36-03.png")
 
-// Ebook: pagine 35; syllabus: 2.3.5
-#illustrazione("Un’applicazione non risponde", "Chiuderla con Gestione attività", [
-Cliccare con il tasto destro in una zona libera della *barra delle applicazioni* e scegliere *Gestione attività*.
+// Docente: precedente slide 5; syllabus: 2.3.5.
+#slide(titolo: "Un’applicazione non risponde")[
+  #titolo("Un’applicazione non risponde", "Gestione attività")
+  #blocco(64, 160, 405, corpo: 25)[
+    Se un programma è bloccato, il sistema operativo può *terminarlo*.
 
-Selezionare il programma bloccato e premere *Termina attività*.
+    1. Aprire *Gestione attività* con *Ctrl + Shift + Esc*.
+    2. Selezionare l’applicazione nella scheda *Processi*.
+    3. Premere *Termina attività* (*End task* nello screenshot).
 
-Il lavoro non salvato nell’applicazione può andare perso.
-], "p36-02.png", corpo: 25)
+    Il lavoro non salvato nell’applicazione può andare perso.
+  ]
+  #place(top + left, dx: 515pt, dy: 151pt, image("../assets/windows10/gestione-attivita.png", width: 375pt))
+]
+
+// Docente: precedente slide 6; syllabus: 2.3.6.
+#lezione("Installare e disinstallare", "La gestione delle applicazioni")[
+*Installare* un’applicazione significa predisporla sul computer per poterla utilizzare. Si può partire dal *Microsoft Store* oppure dal programma di installazione fornito dal produttore.
+
+*Disinstallare* significa rimuoverla attraverso gli strumenti previsti dal sistema operativo. In Windows 10 troviamo l’elenco in *Impostazioni → App → App e funzionalità*.
+
+Cancellare il collegamento dal desktop *non disinstalla* il programma.
+]
 
 // Ebook: pagine 36; syllabus: 2.3.6
 #illustrazione("Installare da un file scaricato", "Eseguire subito o salvare per dopo", [
@@ -351,11 +386,9 @@ Leggere la richiesta e verificare che corrisponda all’installazione avviata pr
 
 // Ebook: pagine 37; syllabus: 2.3.6
 #illustrazione("Disinstallare un’applicazione", "Usare la procedura di rimozione", [
-Aprire *Start → Impostazioni → App → App e funzionalità*.
+Nell’elenco *App e funzionalità*, cercare il programma da rimuovere.
 
-Cercare il programma, selezionarlo e scegliere *Disinstalla*. Confermare e seguire le istruzioni.
-
-Eliminare un’icona o una cartella non esegue la disinstallazione.
+Selezionarlo e scegliere *Disinstalla*. Confermare la richiesta e seguire le istruzioni fino al termine della procedura.
 ], "p38-02.png", corpo: 25)
 
 // Ebook: pagine 37, 38; syllabus: 2.3.7
@@ -367,19 +400,16 @@ Windows cerca il *driver*, cioè il software necessario per far funzionare il di
 Se il dispositivo non viene riconosciuto, controllare collegamento, accensione, alimentazione e compatibilità.
 ]
 
-// Ebook: pagine 38; syllabus: 2.3.7
-#lezione("Scollegare un dispositivo", "Attendere la fine dei trasferimenti")[
-Prima di rimuovere un dispositivo di archiviazione:
-
-1. Attendere la fine delle copie o dei trasferimenti.
-2. Cliccare sull’icona *Rimozione sicura dell’hardware* nell’area di notifica.
-3. Scegliere il dispositivo da espellere.
-4. Attendere il messaggio che autorizza la rimozione, poi scollegarlo.
+// Docente: precedente slide 7; syllabus: 2.3.7.
+#slide(titolo: "Scollegare una chiavetta USB")[
+  #titolo("Scollegare una chiavetta USB", "Espelli dispositivo")
+  #place(top + left, dx: 225pt, dy: 145pt, image("../assets/windows10/espelli-usb.jpg", width: 510pt))
+  #blocco(64, 458, 832, corpo: 23)[Terminati i trasferimenti, aprire l’icona USB e scegliere *Espelli* (*Eject*).\ Attendere la conferma di Windows prima di scollegare il dispositivo.]
 ]
 
 // Ebook: pagine 38; syllabus: 2.3.8
 #lezione("Catturare lo schermo", "Un’immagine di ciò che vediamo")[
-Uno *screenshot* è un’immagine dello schermo.
+Per catturare lo schermo con la tastiera:
 
 - *Stamp*: copia negli Appunti l’immagine dello schermo.
 - *Alt + Stamp*: copia l’immagine della sola finestra attiva.
@@ -387,12 +417,18 @@ Uno *screenshot* è un’immagine dello schermo.
 Aprire un programma come *Paint*, incollare la cattura e salvarla come immagine.
 ]
 
-// Ebook: pagine 38; syllabus: 2.3.8
-#illustrazione("Cattura e annota", "Selezionare un’area dello schermo", [
-Con *Windows + Maiusc + S* avviamo la cattura.
+// Docente: precedente slide 8; syllabus: 2.3.8.
+#slide(titolo: "Catturare lo schermo")[
+  #titolo("Catturare lo schermo", "Cattura e annota")
+  #blocco(64, 160, 355, corpo: 25)[
+    Uno *screenshot* è un’immagine di ciò che compare sullo schermo.
 
-Possiamo acquisire lo schermo o una sua porzione, quindi aprire l’immagine per evidenziare, annotare e salvare.
+    *Windows + Shift + S*
 
-L’ebook presenta anche lo *Strumento di cattura*, disponibile negli Accessori Windows.
-], "p39-01.png", corpo: 25)
+    Scegliere la modalità di cattura e selezionare l’area, una finestra o l’intero schermo.
 
+    Aprire la notifica per vedere la cattura nell’app, annotarla e salvarla.
+  ]
+  // Ritaglio nativo della finestra dell’app, conservando lo screenshot originale.
+  #place(top + left, dx: 465pt, dy: 153pt, image("../assets/windows10/cattura-ritaglio.svg", width: 430pt))
+]

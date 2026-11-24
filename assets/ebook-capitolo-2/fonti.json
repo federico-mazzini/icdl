@@ -9,10 +9,12 @@
   "pagine_pdf": "24–39",
   "estrazione": "Immagini raster originali estratte senza ridisegno; numero pagina PDF e indice immagine nel nome. Testi rielaborati per proiezione.",
   "note": [
-    "La richiesta corrente autorizza la copertura completa, distinta dal precedente pacco ridotto.",
     "Le descrizioni obsolete di Cortana e le limitazioni degli esami sulle scorciatoie non sono riproposte come istruzioni attuali.",
-    "Rinominare un collegamento e impostare la tastiera predefinita sono esplicitati per completare i relativi obiettivi del capitolo.",
-    "Rimosse dalla versione di 44 slide le pagine 8, 9, 10, 12, 14, 17, 18, 22, 25, 33, 35, 36 e 44; numerazione corrente 1–31. I crediti restano nella documentazione e nel sorgente."
+    "Rimosse dalla versione di 44 slide le pagine 8, 9, 10, 12, 14, 17, 18, 22, 25, 33, 35, 36 e 44; numerazione corrente 1–31. I crediti restano nella documentazione e nel sorgente.",
+    "Su richiesta del docente, unificate le due presentazioni nel solo sorgente src/2 - Desktop, icone e applicazioni.typ. Priorità ai testi e a tutte le sei immagini della selezione breve del docente; materiale ebook dove non disponibile.",
+    "32 slide: sei sostituzioni nella sequenza di 31 slide e una nuova introduzione del docente a installazione e disinstallazione. Una sola copertina; dettagli ebook conservati dove complementari. Le esclusioni precedenti restano valide, salvo i contenuti espressamente riversati dal docente.",
+    "La precedente slide 30 dell’ebook mantiene Stamp, Alt + Stamp e salvataggio; la definizione di screenshot è nella successiva slide del docente. La procedura di disinstallazione non ripete le definizioni e il percorso già presenti nell’introduzione.",
+    "Il vecchio URL 2_desktop_icone_impostazioni.pdf resta disponibile come alias del PDF unificato, generato dalla build senza un secondo sorgente Typst. Pool di domande e quiz invariati."
   ],
   "slides": [
     {
@@ -21,7 +23,9 @@
       "riferimenti": [],
       "pagine_ebook": [],
       "immagini": [],
-      "slide_prima_selezione": 1
+      "slide_prima_selezione": 1,
+      "slide_prima_integrazione": 1,
+      "provenienza": "Ebook"
     },
     {
       "slide": 2,
@@ -35,19 +39,30 @@
       "immagini": [
         "p24-02.png"
       ],
-      "slide_prima_selezione": 2
+      "slide_prima_selezione": 2,
+      "slide_prima_integrazione": 2,
+      "provenienza": "Ebook"
     },
     {
       "slide": 3,
-      "titolo": "La barra delle applicazioni",
+      "titolo": "Desktop e barra delle applicazioni",
       "riferimenti": [
-        "2.1.1"
+        "2.1.1",
+        "2.1.2"
       ],
       "pagine_ebook": [
         23
       ],
       "immagini": [],
-      "slide_prima_selezione": 3
+      "slide_prima_selezione": 3,
+      "slide_prima_integrazione": 3,
+      "provenienza": "Docente: selezione breve, precedente slide 2",
+      "immagini_ebook_sostituite": [],
+      "immagini_docente": [
+        "../windows10/barra-ritaglio.svg",
+        "../windows10/barra-applicazioni.png"
+      ],
+      "slide_docente": 2
     },
     {
       "slide": 4,
@@ -61,7 +76,9 @@
       "immagini": [
         "p25-01.png"
       ],
-      "slide_prima_selezione": 4
+      "slide_prima_selezione": 4,
+      "slide_prima_integrazione": 4,
+      "provenienza": "Ebook"
     },
     {
       "slide": 5,
@@ -75,7 +92,9 @@
       "immagini": [
         "p25-02.png"
       ],
-      "slide_prima_selezione": 5
+      "slide_prima_selezione": 5,
+      "slide_prima_integrazione": 5,
+      "provenienza": "Ebook"
     },
     {
       "slide": 6,
@@ -89,7 +108,9 @@
       "immagini": [
         "p26-01.png"
       ],
-      "slide_prima_selezione": 6
+      "slide_prima_selezione": 6,
+      "slide_prima_integrazione": 6,
+      "provenienza": "Ebook"
     },
     {
       "slide": 7,
@@ -102,7 +123,9 @@
         26
       ],
       "immagini": [],
-      "slide_prima_selezione": 7
+      "slide_prima_selezione": 7,
+      "slide_prima_integrazione": 7,
+      "provenienza": "Ebook"
     },
     {
       "slide": 8,
@@ -115,7 +138,9 @@
         27
       ],
       "immagini": [],
-      "slide_prima_selezione": 11
+      "slide_prima_selezione": 11,
+      "slide_prima_integrazione": 8,
+      "provenienza": "Ebook"
     },
     {
       "slide": 9,
@@ -129,11 +154,13 @@
       "immagini": [
         "p28-02.png"
       ],
-      "slide_prima_selezione": 13
+      "slide_prima_selezione": 13,
+      "slide_prima_integrazione": 9,
+      "provenienza": "Ebook"
     },
     {
       "slide": 10,
-      "titolo": "Aprire e chiudere una finestra",
+      "titolo": "Applicazioni e finestre",
       "riferimenti": [
         "2.2.2"
       ],
@@ -141,7 +168,15 @@
         28
       ],
       "immagini": [],
-      "slide_prima_selezione": 15
+      "slide_prima_selezione": 15,
+      "slide_prima_integrazione": 10,
+      "provenienza": "Docente: selezione breve, precedente slide 3",
+      "immagini_ebook_sostituite": [],
+      "immagini_docente": [
+        "../windows10/finestre-affiancate.jpg"
+      ],
+      "slide_docente": 3,
+      "integrazione_ebook": "Dettagli sui pulsanti delle finestre"
     },
     {
       "slide": 11,
@@ -154,7 +189,9 @@
         29
       ],
       "immagini": [],
-      "slide_prima_selezione": 16
+      "slide_prima_selezione": 16,
+      "slide_prima_integrazione": 11,
+      "provenienza": "Ebook"
     },
     {
       "slide": 12,
@@ -168,7 +205,9 @@
       "immagini": [
         "p25-01.png"
       ],
-      "slide_prima_selezione": 19
+      "slide_prima_selezione": 19,
+      "slide_prima_integrazione": 12,
+      "provenienza": "Ebook"
     },
     {
       "slide": 13,
@@ -182,7 +221,9 @@
       "immagini": [
         "p31-02.png"
       ],
-      "slide_prima_selezione": 20
+      "slide_prima_selezione": 20,
+      "slide_prima_integrazione": 13,
+      "provenienza": "Ebook"
     },
     {
       "slide": 14,
@@ -197,7 +238,9 @@
       "immagini": [
         "p32-01.png"
       ],
-      "slide_prima_selezione": 21
+      "slide_prima_selezione": 21,
+      "slide_prima_integrazione": 14,
+      "provenienza": "Ebook"
     },
     {
       "slide": 15,
@@ -208,10 +251,18 @@
       "pagine_ebook": [
         31
       ],
-      "immagini": [
+      "immagini": [],
+      "slide_prima_selezione": 23,
+      "slide_prima_integrazione": 15,
+      "provenienza": "Docente: selezione breve, precedente slide 4",
+      "immagini_ebook_sostituite": [
         "p32-02.png"
       ],
-      "slide_prima_selezione": 23
+      "immagini_docente": [
+        "../windows10/informazioni-sistema.jpg"
+      ],
+      "slide_docente": 4,
+      "integrazione_ebook": "Tipo di processore"
     },
     {
       "slide": 16,
@@ -225,7 +276,9 @@
       "immagini": [
         "p33-01.png"
       ],
-      "slide_prima_selezione": 24
+      "slide_prima_selezione": 24,
+      "slide_prima_integrazione": 16,
+      "provenienza": "Ebook"
     },
     {
       "slide": 17,
@@ -239,7 +292,9 @@
       "immagini": [
         "p33-03.png"
       ],
-      "slide_prima_selezione": 26
+      "slide_prima_selezione": 26,
+      "slide_prima_integrazione": 17,
+      "provenienza": "Ebook"
     },
     {
       "slide": 18,
@@ -253,7 +308,9 @@
       "immagini": [
         "p34-01.png"
       ],
-      "slide_prima_selezione": 27
+      "slide_prima_selezione": 27,
+      "slide_prima_integrazione": 18,
+      "provenienza": "Ebook"
     },
     {
       "slide": 19,
@@ -267,7 +324,9 @@
       "immagini": [
         "p34-02.png"
       ],
-      "slide_prima_selezione": 28
+      "slide_prima_selezione": 28,
+      "slide_prima_integrazione": 19,
+      "provenienza": "Ebook"
     },
     {
       "slide": 20,
@@ -281,7 +340,9 @@
       "immagini": [
         "p35-02.png"
       ],
-      "slide_prima_selezione": 29
+      "slide_prima_selezione": 29,
+      "slide_prima_integrazione": 20,
+      "provenienza": "Ebook"
     },
     {
       "slide": 21,
@@ -295,7 +356,9 @@
       "immagini": [
         "p35-03.png"
       ],
-      "slide_prima_selezione": 30
+      "slide_prima_selezione": 30,
+      "slide_prima_integrazione": 21,
+      "provenienza": "Ebook"
     },
     {
       "slide": 22,
@@ -309,7 +372,9 @@
       "immagini": [
         "p35-01.png"
       ],
-      "slide_prima_selezione": 31
+      "slide_prima_selezione": 31,
+      "slide_prima_integrazione": 22,
+      "provenienza": "Ebook"
     },
     {
       "slide": 23,
@@ -323,7 +388,9 @@
       "immagini": [
         "p36-03.png"
       ],
-      "slide_prima_selezione": 32
+      "slide_prima_selezione": 32,
+      "slide_prima_integrazione": 23,
+      "provenienza": "Ebook"
     },
     {
       "slide": 24,
@@ -334,13 +401,31 @@
       "pagine_ebook": [
         35
       ],
-      "immagini": [
+      "immagini": [],
+      "slide_prima_selezione": 34,
+      "slide_prima_integrazione": 24,
+      "provenienza": "Docente: selezione breve, precedente slide 5",
+      "immagini_ebook_sostituite": [
         "p36-02.png"
       ],
-      "slide_prima_selezione": 34
+      "immagini_docente": [
+        "../windows10/gestione-attivita.png"
+      ],
+      "slide_docente": 5
     },
     {
       "slide": 25,
+      "titolo": "Installare e disinstallare",
+      "riferimenti": [
+        "2.3.6"
+      ],
+      "pagine_ebook": [],
+      "immagini": [],
+      "provenienza": "Docente: selezione breve, precedente slide 6",
+      "slide_docente": 6
+    },
+    {
+      "slide": 26,
       "titolo": "Installare da un file scaricato",
       "riferimenti": [
         "2.3.6"
@@ -351,10 +436,12 @@
       "immagini": [
         "p37-01.png"
       ],
-      "slide_prima_selezione": 37
+      "slide_prima_selezione": 37,
+      "slide_prima_integrazione": 25,
+      "provenienza": "Ebook"
     },
     {
-      "slide": 26,
+      "slide": 27,
       "titolo": "La conferma di installazione",
       "riferimenti": [
         "2.3.6"
@@ -365,10 +452,12 @@
       "immagini": [
         "p38-01.png"
       ],
-      "slide_prima_selezione": 38
+      "slide_prima_selezione": 38,
+      "slide_prima_integrazione": 26,
+      "provenienza": "Ebook"
     },
     {
-      "slide": 27,
+      "slide": 28,
       "titolo": "Disinstallare un’applicazione",
       "riferimenti": [
         "2.3.6"
@@ -379,10 +468,12 @@
       "immagini": [
         "p38-02.png"
       ],
-      "slide_prima_selezione": 39
+      "slide_prima_selezione": 39,
+      "slide_prima_integrazione": 27,
+      "provenienza": "Ebook"
     },
     {
-      "slide": 28,
+      "slide": 29,
       "titolo": "Collegare un dispositivo USB",
       "riferimenti": [
         "2.3.7"
@@ -392,11 +483,13 @@
         38
       ],
       "immagini": [],
-      "slide_prima_selezione": 40
+      "slide_prima_selezione": 40,
+      "slide_prima_integrazione": 28,
+      "provenienza": "Ebook"
     },
     {
-      "slide": 29,
-      "titolo": "Scollegare un dispositivo",
+      "slide": 30,
+      "titolo": "Scollegare una chiavetta USB",
       "riferimenti": [
         "2.3.7"
       ],
@@ -404,10 +497,17 @@
         38
       ],
       "immagini": [],
-      "slide_prima_selezione": 41
+      "slide_prima_selezione": 41,
+      "slide_prima_integrazione": 29,
+      "provenienza": "Docente: selezione breve, precedente slide 7",
+      "immagini_ebook_sostituite": [],
+      "immagini_docente": [
+        "../windows10/espelli-usb.jpg"
+      ],
+      "slide_docente": 7
     },
     {
-      "slide": 30,
+      "slide": 31,
       "titolo": "Catturare lo schermo",
       "riferimenti": [
         "2.3.8"
@@ -416,21 +516,31 @@
         38
       ],
       "immagini": [],
-      "slide_prima_selezione": 42
+      "slide_prima_selezione": 42,
+      "slide_prima_integrazione": 30,
+      "provenienza": "Ebook"
     },
     {
-      "slide": 31,
-      "titolo": "Cattura e annota",
+      "slide": 32,
+      "titolo": "Catturare lo schermo",
       "riferimenti": [
         "2.3.8"
       ],
       "pagine_ebook": [
         38
       ],
-      "immagini": [
+      "immagini": [],
+      "slide_prima_selezione": 43,
+      "slide_prima_integrazione": 31,
+      "provenienza": "Docente: selezione breve, precedente slide 8",
+      "immagini_ebook_sostituite": [
         "p39-01.png"
       ],
-      "slide_prima_selezione": 43
+      "immagini_docente": [
+        "../windows10/cattura-ritaglio.svg",
+        "../windows10/cattura-annota.jpg"
+      ],
+      "slide_docente": 8
     }
   ],
   "slide_eliminate_su_richiesta": [
@@ -608,5 +718,11 @@
       ],
       "immagini": []
     }
-  ]
+  ],
+  "fonte_docente": {
+    "sorgente_precedente": "src/2_desktop_icone_impostazioni.typ",
+    "pdf_precedente": "2_desktop_icone_impostazioni.pdf",
+    "immagini_e_crediti": "../windows10/fonti.json",
+    "copertina": "Unica copertina dal sorgente principale; sottotitolo comune alle due versioni."
+  }
 }

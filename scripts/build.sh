@@ -21,6 +21,8 @@ if [[ "$count" -eq 0 ]]; then
   exit 1
 fi
 
+# Mantiene il vecchio link del modulo 2 con lo stesso PDF e un solo sorgente.
+cp "$build_dir/2 - Desktop, icone e applicazioni.pdf" "$build_dir/2_desktop_icone_impostazioni.pdf"
 python3 scripts/build_index.py "$build_dir"
 touch "$build_dir/.nojekyll"
 mkdir -p dist

@@ -17,14 +17,13 @@
 
 ## Presentazioni Typst
 
-Sono disponibili sei presentazioni, ciascuna con un unico sorgente Typst:
+Sono disponibili cinque presentazioni, ciascuna con un unico sorgente Typst:
 
 | Versione | Sorgente | PDF | Contenuto |
 | --- | --- | --- | --- |
 | Originali mie | `src/originali mie.typ` | `dist/originali mie.pdf` | Tutte le 49 slide della prima conversione |
 | 1. Computer e dispositivi | `src/1_computer_dispositivi.typ` | `dist/1_computer_dispositivi.pdf` | 46 slide: 31 riprese dalle originali e 15 nuove |
-| 2. Desktop, icone e impostazioni | `src/2_desktop_icone_impostazioni.typ` | `dist/2_desktop_icone_impostazioni.pdf` | 8 slide, selezione concordata dei punti della sezione 2 |
-| 2 - Desktop, icone e applicazioni | `src/2 - Desktop, icone e applicazioni.typ` | `dist/2 - Desktop, icone e applicazioni.pdf` | 31 slide, selezione dall’ebook |
+| 2 - Desktop, icone e applicazioni | `src/2 - Desktop, icone e applicazioni.typ` | `dist/2 - Desktop, icone e applicazioni.pdf` | 32 slide, materiale del docente integrato nella selezione dall’ebook |
 | 3 - Testi e stampe | `src/3 - Testi e stampe.typ` | `dist/3 - Testi e stampe.pdf` | 18 slide, selezione del capitolo 3 dell’ebook |
 | 4. Gestione di file | `src/4_gestione_file.typ` | `dist/4_gestione_file.pdf` | 32 slide: 23 del docente e 9 integrazioni dall’ebook |
 
@@ -111,9 +110,9 @@ Per le nuove spiegazioni su licenze e procedure di Windows sono state consultate
 - [Microsoft: accesso agli account in Windows](https://support.microsoft.com/en-gb/accounts-billing/security/user-account-access-in-windows), per accesso, blocco e disconnessione.
 - [Microsoft: spegnimento del computer](https://support.microsoft.com/en-gb/windows/experience/power-battery/shut-down-sleep-or-hibernate-your-pc), per la procedura dal menu Start.
 
-### 2. Desktop, icone e impostazioni
+### 2. Desktop, icone e impostazioni: selezione del docente confluita nella versione unificata
 
-Segui la selezione del docente, senza aggiungere automaticamente gli argomenti esclusi. La presentazione non intende coprire integralmente la sezione 2.
+La selezione di 8 slide seguente è storica: i suoi sette contenuti sono ora integrati nel solo `src/2 - Desktop, icone e applicazioni.typ`, con priorità ai testi e alle immagini del docente. La copertina è unica. La tabella conserva la numerazione precedente; la mappatura attuale è in `assets/ebook-capitolo-2/fonti.json`.
 
 | Slide | Riferimento | Trattamento |
 | --- | --- | --- |
@@ -126,7 +125,7 @@ Segui la selezione del docente, senza aggiungere automaticamente gli argomenti e
 | 7 | 2.3.7 | Screenshot di Espelli dispositivo e due righe di spiegazione |
 | 8 | 2.3.8 | Screenshot di Cattura e annota e scorciatoia Windows + Shift + S |
 
-Saltare 2.1.3, 2.1.4, 2.2.1, 2.2.3, 2.3.1, 2.3.3 e 2.3.4. Tutti gli screenshot devono essere di Windows 10, senza acquisizioni dal Mac del docente. Sono ammesse immagini da tutorial esterni, anche Aranzulla, verificando che non siano state sostituite con schermate di Windows 11. Le immagini usate, i rispettivi autori e i ritagli sono documentati in `assets/windows10/fonti.json`; i ritagli SVG mantengono intatti i file bitmap originali. Non generare schermate simulate.
+Nella selezione breve erano esclusi 2.1.3, 2.1.4, 2.2.1, 2.2.3, 2.3.1, 2.3.3 e 2.3.4; la versione unificata conserva anche gli argomenti già presenti nella selezione dell’ebook. Tutti gli screenshot devono essere di Windows 10, senza acquisizioni dal Mac del docente. Sono ammesse immagini da tutorial esterni, anche Aranzulla, verificando che non siano state sostituite con schermate di Windows 11. Le immagini usate, i rispettivi autori e i ritagli sono documentati in `assets/windows10/fonti.json`; i ritagli SVG mantengono intatti i file bitmap originali. Non generare schermate simulate.
 
 Riferimenti per le procedure: [Microsoft, barra delle applicazioni](https://support.microsoft.com/it-it/windows/experience/personalization/customize-the-taskbar-in-windows), [Microsoft, Cattura e annota in Windows 10](https://blogs.windows.com/windowsexperience/2019/04/08/windows-10-tip-snip-sketch/), [Microsoft, rimozione sicura](https://support.microsoft.com/en-us/windows/hardware/safely-remove-hardware-in-windows), [Microsoft, strumenti di supporto e Gestione attività](https://support.microsoft.com/en-us/accessibility/windows/use-a-screen-reader-to-navigate-windows-support-tools).
 
@@ -212,11 +211,11 @@ Alcune immagini originali, in particolare porte, icone e schermate, hanno una ri
 SHA-256 dell’originale, verificato prima e dopo il lavoro:
 `8a4251de32916b45ae5268ff36f1aa0b99abe32eb415b7ad15e5a4103752b683`.
 
-## 2 - Desktop, icone e applicazioni: capitolo completo dell’ebook
+## 2 - Desktop, icone e applicazioni: presentazione unificata
 
-Su richiesta del docente, nuova presentazione completa distinta dalla precedente selezione breve. Il sorgente unico è `src/2 - Desktop, icone e applicazioni.typ`; l’output con nome stabile è `dist/2 - Desktop, icone e applicazioni.pdf`. Mantiene il modello della presentazione 2 esistente: 960 × 540 pt, Libertinus Serif, titoli rossi e numerazione progressiva.
+Su richiesta del docente, unificare la precedente selezione breve e quella dall’ebook, dando priorità ai testi e alle immagini del docente quando disponibili. Il sorgente unico è `src/2 - Desktop, icone e applicazioni.typ`; l’output con nome stabile è `dist/2 - Desktop, icone e applicazioni.pdf`. Mantiene il modello della presentazione 2 esistente: 960 × 540 pt, Libertinus Serif, titoli rossi e numerazione progressiva.
 
-Fonte: `ICDL Computer Essentials eBook.pdf` (originale in Download), Mario R. Storchi, © 2020 AICA & Edizioni Manna, capitolo 2 “Desktop, icone, impostazioni”, pp. 23–38 (pagine PDF 24–39). La versione corrente contiene 31 slide: su richiesta del docente sono state eliminate le precedenti 8, 9, 10, 12, 14, 17, 18, 22, 25, 33, 35, 36 e 44. La copertura del capitolo è ora parziale; non reinserire automaticamente i contenuti rimossi. I crediti sono conservati nel sorgente e nel file delle fonti. La richiesta corrente autorizza in questa nuova versione anche gli argomenti esclusi dalla presentazione breve, che rimane invariata. Le immagini originali estratte e la mappatura per slide, con hash della fonte, sono in `assets/ebook-capitolo-2/` e `fonti.json`. I testi sono adattati per la proiezione, senza riproporre come istruzioni attuali i riferimenti obsoleti a Cortana o ai limiti sulle scorciatoie negli esami. Resta l’accenno alla tastiera predefinita.
+Fonte: `ICDL Computer Essentials eBook.pdf` (originale in Download), Mario R. Storchi, © 2020 AICA & Edizioni Manna, capitolo 2 “Desktop, icone, impostazioni”, pp. 23–38 (pagine PDF 24–39). La selezione dall’ebook conteneva 31 slide dopo l’eliminazione delle precedenti 8, 9, 10, 12, 14, 17, 18, 22, 25, 33, 35, 36 e 44. La versione unificata contiene 32 slide. La copertura del capitolo è ora parziale; non reinserire automaticamente i contenuti rimossi. I crediti sono conservati nel sorgente e nel file delle fonti. La selezione dall’ebook aveva già autorizzato anche gli argomenti esclusi dalla presentazione breve. Quest’ultima è ora confluita nella versione unificata: il suo sorgente separato è rimosso. Le immagini originali estratte e la mappatura per slide, con hash della fonte, sono in `assets/ebook-capitolo-2/` e `fonti.json`. I testi sono adattati per la proiezione, senza riproporre come istruzioni attuali i riferimenti obsoleti a Cortana o ai limiti sulle scorciatoie negli esami. Resta l’accenno alla tastiera predefinita.
 
 Compilazione con `bash scripts/build.sh` (Typst 0.15.1); testi misurati in Typst, formato e contatori controllati nel PDF, controllo visivo delle pagine renderizzate. La nuova versione non comporta modifiche automatiche ai pool di domande o ai quiz esistenti.
 
@@ -274,3 +273,11 @@ Numerazione corrente:
 | 32 | Estrarre in Windows 10 — Scegliere la cartella di destinazione | Docente, precedente 23 |
 
 Compilazione con `bash scripts/build.sh` e Typst 0.15.1; confronto delle 23 pagine precedenti con quelle mantenute (aggiornato solo il contatore) e controllo visivo delle pagine nuove.
+
+### Unificazione del modulo 2: priorità al materiale del docente
+
+Il solo sorgente `src/2 - Desktop, icone e applicazioni.typ` segue la sequenza della selezione dall’ebook. Le slide 3 (barra annotata), 10 (applicazioni e finestre), 15 (informazioni del computer), 24 (Gestione attività), 30 (espulsione USB) e 32 (Cattura e annota) provengono dalla selezione del docente e conservano tutte le sue sei immagini, senza ridisegni. I dettagli sui pulsanti delle finestre e sul processore sono integrati dall’ebook. La slide 25 è l’introduzione del docente a installazione e disinstallazione; seguono i passaggi illustrati dell’ebook. Evitare ripetizioni delle definizioni, del percorso di disinstallazione e della definizione di screenshot. Le restanti 24 slide seguono l’ebook. Una sola copertina, 32 pagine complessive; testi modificabili, formato e stile invariati.
+
+Il precedente `src/2_desktop_icone_impostazioni.typ` non va ricreato. La build genera `dist/2_desktop_icone_impostazioni.pdf` come copia identica del PDF unificato per conservare il vecchio URL pubblico; README e indice mostrano solo la presentazione unificata. I crediti delle immagini del docente rimangono in `assets/windows10/fonti.json`, con numeri correnti e uso precedente; la mappatura completa e le sostituzioni sono in `assets/ebook-capitolo-2/fonti.json`. Non modificare automaticamente domande o quiz.
+
+Verifica dell’unificazione: build completa con Typst 0.15.1; 32 pagine 960 × 540 pt e contatori 1–32 controllati. Renderizzate tutte le pagine, ispezionate le nove pagine sostituite, aggiunte o ritoccate; nessuna sovrapposizione o testo fuori pagina rilevato. Confronto pixel delle 23 pagine ebook non modificate (escluso il contatore), confronto dei pixel decodificati delle sei immagini del docente e identità binaria del PDF alias completati.

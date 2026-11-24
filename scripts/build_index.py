@@ -10,13 +10,14 @@ def main():
     directory = Path(sys.argv[1])
     titles = {
         "3 - Testi e stampe.pdf": "3 - Testi e stampe",
-        "2 - Desktop, icone e applicazioni.pdf": "2 - Desktop, icone e applicazioni (dall’ebook)",
+        "2 - Desktop, icone e applicazioni.pdf": "2 - Desktop, icone e applicazioni",
         "1_computer_dispositivi.pdf": "1. Computer e dispositivi",
-        "2_desktop_icone_impostazioni.pdf": "2. Desktop, icone e impostazioni",
         "4_gestione_file.pdf": "4. Gestione di file",
         "originali mie.pdf": "Originali mie",
     }
-    pdfs = sorted(directory.glob("*.pdf"))
+    # L’alias conserva il vecchio URL senza duplicare la presentazione nell’indice.
+    pdfs = sorted(pdf for pdf in directory.glob("*.pdf")
+                  if pdf.name != "2_desktop_icone_impostazioni.pdf")
     if not pdfs:
         raise SystemExit("Nessun PDF da pubblicare.")
     links = "\n".join(
